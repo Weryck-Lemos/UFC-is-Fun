@@ -1,0 +1,10 @@
+n = int(input())
+
+if n<=324: print("Extremamente pobre")
+elif n<=648: print("Pobre")
+elif n<=1164: print("Vulneravel")
+elif n<=1764: print("Baixa classe media")
+elif n<=2564: print("Media classe media")
+elif n<=4076: print("Alta classe media")
+elif n<= 9920: print("Baixa classe alta")
+else: print("Alta classe alta")
