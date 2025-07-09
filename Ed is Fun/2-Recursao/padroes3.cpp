@@ -19,8 +19,6 @@ int main(){
 
 /*
 
-como implementar isso de forma recursiva sem for: int vet[20] = {0};
-    
 
 3:  1   3   6   10
 4:  1   4   9   16
