@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-17_18-28-38",
+            "content": "@@ -1102,21 +1102,20 @@\n %0A%0Acar = \n-Car()\n+None\n %0Awhile T\n",
+            "lines": "69"
+        },
+        {
+            "label": "2025-09-17_18-28-54",
+            "content": "@@ -215,17 +215,16 @@\n  f%22pass:\n- \n %7Bself.pa\n@@ -231,17 +231,16 @@\n s%7D, gas:\n- \n %7Bself.ga\n@@ -246,17 +246,16 @@\n as%7D, km:\n- \n %7Bself.km\n",
+            "lines": "69"
+        },
+        {
+            "label": "2025-09-17_18-29-12",
+            "content": "@@ -1262,21 +1262,20 @@\n cmd == %22\n-enter\n+init\n %22:%0A     \n@@ -1284,13 +1284,13 @@\n  car\n-.ente\n+ = Ca\n r()%0A\n",
+            "lines": "69"
+        },
+        {
+            "label": "2025-09-17_18-29-43",
+            "content": "@@ -628,20 +628,10 @@\n gas \n-= self.gas \n +\n+=\n  inc\n",
+            "lines": "69"
+        },
+        {
+            "label": "2025-09-17_18-31-51",
+            "content": "@@ -625,16 +625,27 @@\n lf.gas =\n+ self.gas +\n  increme\n@@ -680,27 +680,19 @@\n lf.gas, \n-self.gasMax\n+100\n )%0A%0A    d\n@@ -1432,28 +1432,24 @@\n ement = \n-int(\n parts%5B1%5D\n )%0A      \n@@ -1432,33 +1432,32 @@\n ement = parts%5B1%5D\n-)\n %0A        car.fue\n@@ -1517,20 +1517,16 @@\n e = \n-int(\n parts%5B1%5D\n )%0A  \n@@ -1521,17 +1521,16 @@\n parts%5B1%5D\n-)\n %0A       \n",
+            "lines": "69"
+        },
+        {
+            "label": "2025-09-17_18-41-29",
+            "content": "@@ -766,36 +766,36 @@\n int(%22fail: n\n-ao ha\n+%C3%A3o h%C3%A1\n  ningu\n-e\n+%C3%A9\n m no carro%22)\n",
+            "lines": "69"
+        },
+        {
+            "label": "2025-09-17_18-41-46",
+            "content": "@@ -1022,17 +1022,17 @@\n vazio ap\n-o\n+%C3%B3\n s andar \n",
+            "lines": "69"
+        },
+        {
+            "label": "2025-09-17_18-41-55",
+            "content": "class Car:\n    def __init__(self):\n        self.pas :int = 0\n        self.km :int = 0\n        self.pasMax :int = 2\n        self.gas :int = 0\n        self.gasMax :int = 100\n    \n    def __str__(self):\n        return f\"pass: {self.pas}, gas: {self.gas}, km: {self.km}\"\n    \n    def enter(self):\n        if(self.pas == self.pasMax): \n            print(\"fail: limite de pessoas atingido\")\n            return\n\n        self.pas+=1\n    \n    def leave(self):\n        if(self.pas == 0):\n            print(\"fail: nao ha ninguem no carro\")\n            return\n        \n        self.pas -=1\n\n    def fuel(self, increment:int):\n        self.gas = increment\n        self.gas = min(self.gas, self.gasMax)\n\n    def drive(self, distance:int):\n        if self.pas == 0:\n            print(\"fail: nao ha ninguem no carro\")\n            return\n        \n        if self.gas == 0:\n            print(\"fail: tanque vazio\")\n            return\n        \n        if distance > self.gas:\n            distance = self.gas\n            print(f\"fail: tanque vazio apos andar {distance} km\")\n\n        self.km += distance\n        self.gas -= distance\n\ncar = Car()\nwhile True:\n    line = input()\n    print(f\"${line}\")\n\n    parts = line.split()\n    cmd = parts[0]\n\n    if cmd == \"end\":\n        break\n    elif cmd == \"enter\":\n        car.enter()\n    elif cmd == \"show\":\n        print(car)\n    elif cmd == \"leave\":\n        car.leave()\n    elif cmd == \"fuel\":\n        increment = int(parts[1])\n        car.fuel(increment)\n    elif cmd == \"drive\":\n        distance = int(parts[1])\n        car.drive(distance)\n    else:\n        print(\"fail: comando invalido\")\n",
+            "lines": "69"
+        }
+    ]
+}

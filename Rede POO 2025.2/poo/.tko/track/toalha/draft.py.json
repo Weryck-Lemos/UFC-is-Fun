@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-17_16-30-28",
+            "content": "class Towel:\n    def __init__(self, color: str, size : str):\n        self.color: str = color\n        self.size: str = size\n        self.wetness: int = 0\n\n    def getMaxWetness(self):\n        if(self.size == 'P'):return 10\n        elif(self.size == 'M'): return 20\n        else: return 30\n\n    def isDry(self):\n        return self.wetness == 0\n\n    def dry(self, amout : int):\n        self.wetness += amout\n        if self.wetness >= self.getMaxWetness():\n            print(\"toalha encharcada\")\n            self.wetness = self.getMaxWetness()\n\n    def wrigOut(self):\n        self.wetness = 0\n\n    \n",
+            "lines": "24"
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-17_17-49-36",
+            "content": "@@ -136,103 +136,8 @@\n  0%0A%0A\n-    def __init__(self):%0A        self.specie = %22%22%0A        self.sound = %22%22%0A        self.age = 0%0A%0A\n     \n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-09-17_17-50-32",
+            "content": "@@ -131,24 +131,110 @@\n age = 0%0A\n-        \n+%0A    def __init__(self):%0A        self.specie = %22%22%0A        self.sound = %22%22%0A        self.age = 0\n %0A%0A    de\n@@ -657,12 +657,16 @@\n l = \n-None\n+Animal()\n %0A   \n",
+            "lines": "65"
+        },
+        {
+            "label": "2025-09-17_17-52-32",
+            "content": "@@ -1192,21 +1192,20 @@\n  animal.\n-ageBy\n+grow\n (increme\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-09-17_17-53-03",
+            "content": "@@ -277,16 +277,18 @@\n self.age\n+By\n  += incr\n@@ -455,22 +455,21 @@\n  == 0): \n-return\n+print\n (%22---%22)%0A\n@@ -496,22 +496,21 @@\n e %3E=4): \n-return\n+print\n (%22RIP%22)%0A\n@@ -523,22 +523,21 @@\n   else: \n-return\n+print\n (self.so\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-09-17_17-57-41",
+            "content": "@@ -310,16 +310,18 @@\n self.age\n+By\n  %3E= 4): \n@@ -393,16 +393,18 @@\n self.age\n+By\n  = 4%0A%0A  \n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-09-17_17-57-59",
+            "content": "@@ -535,24 +535,36 @@\n elf.sound)%0A%0A\n+def main():%0A\n     animal =\n@@ -919,17 +919,16 @@\n  sound)%0A\n-%0A\n         \n@@ -963,22 +963,121 @@\n     \n-print(animal)%0A\n+if animal:%0A                print(animal)%0A            else:%0A                print(%22fail: animal n%C3%A3o inicializado%22)\n %0A   \n@@ -1097,24 +1097,51 @@\n  == %22grow%22:%0A\n+            if animal:%0A    \n             \n@@ -1174,24 +1174,28 @@\n             \n+   \n+ \n animal.ageBy\n@@ -1210,76 +1210,247 @@\n nt)%0A\n-%0A        elif cmd == %22noise%22:%0A            print(animal.makeSound())%0A\n+            else:%0A                print(%22fail: animal n%C3%A3o inicializado%22)%0A        elif cmd == %22noise%22:%0A            if animal:%0A                print(animal.makeSound())%0A            else:%0A                print(%22fail: animal n%C3%A3o inicializado%22)\n %0A   \n@@ -1499,12 +1499,52 @@\n o invalido%22)\n+%0A%0A%0Aif __name__ == %22__main__%22:%0A    main()\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-09-17_17-59-18",
+            "content": "@@ -539,17 +539,20 @@\n sound)%0A%0A\n-%0A\n+    \n animal =\n@@ -562,16 +562,20 @@\n ne%0A    %0A\n+    \n while Tr\n@@ -578,16 +578,20 @@\n e True:%0A\n+    \n     line\n@@ -597,24 +597,28 @@\n e = input()%0A\n+    \n     print(f%22\n@@ -627,25 +627,33 @@\n line%7D%22)%0A    \n-%0A\n+    %0A    \n     parts = \n@@ -661,24 +661,28 @@\n ine.split()%0A\n+    \n     if not p\n@@ -695,16 +695,20 @@\n         \n+    \n continue\n@@ -708,16 +708,20 @@\n ontinue%0A\n+    \n     cmd \n@@ -732,16 +732,20 @@\n rts%5B0%5D%0A%0A\n+    \n     if c\n@@ -769,14 +769,22 @@\n     \n+    \n break%0A\n+    \n     \n@@ -811,16 +811,20 @@\n         \n+    \n species \n@@ -842,16 +842,20 @@\n         \n+  \n+  \n sound = \n@@ -863,16 +863,20 @@\n arts%5B2%5D%0A\n+    \n         \n@@ -904,24 +904,28 @@\n es, sound)%0A%0A\n+    \n     elif cmd\n@@ -936,32 +936,36 @@\n %22show%22:%0A        \n+    \n print(animal)%0A%0A \n@@ -963,16 +963,20 @@\n nimal)%0A%0A\n+    \n     elif\n@@ -999,16 +999,20 @@\n         \n+    \n incremen\n@@ -1033,24 +1033,28 @@\n 1%5D)%0A        \n+  \n+  \n animal.ageBy\n@@ -1066,16 +1066,20 @@\n ement)%0A%0A\n+    \n     elif\n@@ -1095,32 +1095,36 @@\n noise%22:%0A        \n+    \n print(animal.mak\n@@ -1134,16 +1134,20 @@\n und())%0A%0A\n+    \n     else\n@@ -1148,16 +1148,20 @@\n   else:%0A\n+    \n         \n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-09-17_17-59-29",
+            "content": "class Animal:\n    def __init__(self, specie:str, sound:str):\n        self.specie = specie\n        self.sound = sound\n        self.age = 0\n        \n\n    def __str__(self):\n        return f\"{self.specie}:{self.age}:{self.sound}\"\n    \n    def ageBy(self, increment:int):\n        self.age += increment\n        if(self.age >= 4): \n            print(f\"warning: {self.specie} morreu\")\n            self.age = 4\n\n    def makeSound(self):\n        if(self.age == 0): return(\"---\")\n        elif(self.age >=4): return(\"RIP\")\n        else: return(self.sound)\n\n\nanimal = None\n    \nwhile True:\n    line = input()\n    print(f\"${line}\")\n    \n    parts = line.split()\n    if not parts:\n        continue\n    cmd = parts[0]\n\n    if cmd == \"end\":\n        break\n    elif cmd == \"init\":\n        species = parts[1]\n        sound = parts[2]\n        animal = Animal(species, sound)\n\n    elif cmd == \"show\":\n        print(animal)\n\n    elif cmd == \"grow\":\n        increment = int(parts[1])\n        animal.ageBy(increment)\n\n    elif cmd == \"noise\":\n        print(animal.makeSound())\n\n    else:\n        print(\"fail: comando invalido\")",
+            "lines": "52"
+        }
+    ]
+}
