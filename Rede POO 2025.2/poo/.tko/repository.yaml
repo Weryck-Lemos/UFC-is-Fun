@@ -4,14 +4,16 @@ version: 0.0.1
 database: database
 expanded:
 - campanha-principal
+- bloco_b-primeiras-classes
 tasks:
   toalha: '{rate:100, flow:6, edge:5}'
   animal: '{rate:100, flow:6, edge:5}'
   carro: '{rate:100, flow:6, edge:5}'
+  enxugar: '{rate:100, flow:6, edge:5}'
 flags:
   quests: 0
   tracks: 0
   tasks: 0
   graph: 0
   xray: 0
-index: campanha-principal
+index: animal

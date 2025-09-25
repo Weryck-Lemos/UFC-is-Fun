@@ -42,28 +42,31 @@ class Car:
 
         self.km += distance
         self.gas -= distance
+        
+def main():
+    car = Car()
+    while True:
+        line = input()
+        print(f"${line}")
 
-car = Car()
-while True:
-    line = input()
-    print(f"${line}")
+        parts = line.split()
+        cmd = parts[0]
 
-    parts = line.split()
-    cmd = parts[0]
+        if cmd == "end":
+            break
+        elif cmd == "enter":
+            car.enter()
+        elif cmd == "show":
+            print(car)
+        elif cmd == "leave":
+            car.leave()
+        elif cmd == "fuel":
+            increment = int(parts[1])
+            car.fuel(increment)
+        elif cmd == "drive":
+            distance = int(parts[1])
+            car.drive(distance)
+        else:
+            print("fail: comando invalido")
 
-    if cmd == "end":
-        break
-    elif cmd == "enter":
-        car.enter()
-    elif cmd == "show":
-        print(car)
-    elif cmd == "leave":
-        car.leave()
-    elif cmd == "fuel":
-        increment = int(parts[1])
-        car.fuel(increment)
-    elif cmd == "drive":
-        distance = int(parts[1])
-        car.drive(distance)
-    else:
-        print("fail: comando invalido")
+main()

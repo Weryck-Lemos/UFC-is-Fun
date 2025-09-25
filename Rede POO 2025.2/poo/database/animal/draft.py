@@ -5,48 +5,47 @@ class Animal:
         self.age = 0
         
 
-    def __str__(self):
+    def __str__(self)->str:
         return f"{self.specie}:{self.age}:{self.sound}"
     
-    def ageBy(self, increment:int):
+    def ageBy(self, increment:int)->int:
         self.age += increment
         if(self.age >= 4): 
             print(f"warning: {self.specie} morreu")
             self.age = 4
 
-    def makeSound(self):
+    def makeSound(self)->str:
         if(self.age == 0): return("---")
-        elif(self.age >=4): return("RIP")
+        if(self.age ==4): return("RIP")
         else: return(self.sound)
 
 
-animal = None
-    
-while True:
-    line = input()
-    print(f"${line}")
-    
-    parts = line.split()
-    if not parts:
-        continue
-    cmd = parts[0]
+def main():
+    animal = None
+        
+    while True:
+        line = input()
+        print(f"${line}")
+        
+        parts = line.split()
+        if not parts:
+            continue
+        cmd = parts[0]
 
-    if cmd == "end":
-        break
-    elif cmd == "init":
-        species = parts[1]
-        sound = parts[2]
-        animal = Animal(species, sound)
+        if cmd == "end":
+            break
+        elif cmd == "init":
+            species = parts[1]
+            sound = parts[2]
+            animal = Animal(species, sound)
+        elif cmd == "show":
+            print(animal)
+        elif cmd == "grow":
+            increment = int(parts[1])
+            animal.ageBy(increment)
+        elif cmd == "noise":
+            print(animal.makeSound())
+        else:
+            print("fail: comando invalido")
 
-    elif cmd == "show":
-        print(animal)
-
-    elif cmd == "grow":
-        increment = int(parts[1])
-        animal.ageBy(increment)
-
-    elif cmd == "noise":
-        print(animal.makeSound())
-
-    else:
-        print("fail: comando invalido")
+main()
