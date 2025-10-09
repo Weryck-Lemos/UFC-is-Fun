@@ -1,0 +1,7 @@
+2025-10-09 09:10:19, MOVE, v:1, k:chinela, mode:PICK
+2025-10-09 09:10:20, EXEC, v:1, k:chinela, mode:FREE, size:26
+2025-10-09 09:11:06, EXEC, v:1, k:chinela, mode:FREE, size:28
+2025-10-09 09:11:49, EXEC, v:1, k:chinela, mode:FREE, size:28
+2025-10-09 09:12:11, MOVE, v:1, k:chinela, mode:BACK
+2025-10-09 09:37:08, MOVE, v:1, k:camisa, mode:PICK
+2025-10-09 09:37:10, EXEC, v:1, k:camisa, mode:FREE, size:26

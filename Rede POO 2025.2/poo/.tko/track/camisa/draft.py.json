@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-08_15-23-17",
+            "content": "@@ -87,16 +87,10 @@\n tam)\n--%3Ebool\n :%0A\n+\n     \n@@ -181,21 +181,16 @@\n   return\n- True\n %0A       \n@@ -219,29 +219,8 @@\n do%22)\n-%0A        return False\n %0A%0A  \n@@ -286,32 +286,32 @@\n  __str__(self):%0A\n+\n         return f\n@@ -337,204 +337,4 @@\n am%7D%22\n-%0A    %0A%0Adef main():%0A    camisa = Camisa()%0A%0A    while True:%0A        tam = input()%0A        if camisa.set_tam(tam):%0A            break%0A        %0A        print(%22Informe um tamanho v%C3%A1lido: PP, P, M, G ou GG%22)\n",
+            "lines": "16"
+        },
+        {
+            "label": "2025-10-08_15-24-32",
+            "content": "@@ -569,12 +569,4 @@\n GG%22)\n-%0A%0Amain()\n",
+            "lines": "28"
+        },
+        {
+            "label": "2025-10-08_15-24-52",
+            "content": "@@ -86,12 +86,8 @@\n  tam\n-:str\n )-%3Eb\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-08_15-25-47",
+            "content": "@@ -435,20 +435,19 @@\n         \n-line\n+tam\n  = input\n@@ -479,12 +479,11 @@\n tam(\n-line\n+tam\n ):%0A \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-08_15-26-15",
+            "content": "@@ -446,20 +446,15 @@\n e = \n-str(\n input()\n-)\n %0A   \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-08_15-26-31",
+            "content": "@@ -446,15 +446,20 @@\n e = \n+str(\n input()\n+)\n %0A   \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-08_15-29-22",
+            "content": "@@ -7,16 +7,17 @@\n Camisa:%0A\n+%0A\n     def \n@@ -54,104 +54,12 @@\n _tam\n-anho: str =%22%22%0A%0A    def __str__(self)-%3Estr:%0A        return f%22esse %C3%A9 seu tamanho: %7Bself.__tamanho%7D\n+ = %22\n %22%0A%0A \n@@ -68,28 +68,24 @@\n  def set_tam\n-anho\n (self, tam: \n@@ -87,14 +87,18 @@\n tam:\n- \n str)\n- \n+-%3Ebool\n :%0A  \n@@ -109,82 +109,45 @@\n   if\n+(\n  tam\n-== %22PP%22 or tam== %22P%22 or tam==%22M%22 or tam==%22G%22 or tam==%22GG%22 or tam==%22XG%22\n+ in %5B%22PP%22, %22P%22, %22M%22, %22G%22, %22GG%22%5D)\n :%0A  \n@@ -166,20 +166,17 @@\n lf.__tam\n-anho\n+ \n = tam%0A  \n@@ -191,16 +191,21 @@\n   return\n+ True\n %0A       \n@@ -214,42 +214,50 @@\n rint\n- (f%22 t\n+(%22T\n amanho \n-despropocional\n+inv%C3%A1lido\n %22)%0A    \n+ \n+   return False%0A\n %0A   \n@@ -268,20 +268,16 @@\n  get_tam\n-anho\n (self):%0A\n@@ -301,20 +301,89 @@\n lf.__tam\n-anho\n+%0A    %0A    def __str__(self):%0A        return f%22Tamanho: %7Bself.__tam%7D%22%0A    \n %0A%0Adef ma\n@@ -398,17 +398,19 @@\n   camisa\n-=\n+ = \n Camisa()\n@@ -410,16 +410,17 @@\n amisa()%0A\n+%0A\n     whil\n@@ -435,17 +435,21 @@\n         \n-n\n+line \n = input(\n@@ -454,24 +454,27 @@\n t()%0A        \n+if \n camisa.set_t\n@@ -479,15 +479,15 @@\n _tam\n-anho(n)\n+(line):\n %0A   \n@@ -495,38 +495,17 @@\n     \n-if camisa.get_tamanho() != %22%22:\n+    break\n %0A   \n@@ -513,19 +513,13 @@\n     \n+%0A\n     \n-break%0A%0A\n     \n@@ -528,15 +528,56 @@\n int(\n-camisa)\n+%22Informe um tamanho v%C3%A1lido: PP, P, M, G ou GG%22)%0A\n %0Amai\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-09_09-37-10",
+            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanho: str =\"\"\n\n    def __str__(self)->str:\n        return f\"esse \u00e9 seu tamanho: {self.__tamanho}\"\n\n    def set_tamanho(self, tam: str) :\n        if tam== \"PP\" or tam== \"P\" or tam==\"M\" or tam==\"G\" or tam==\"GG\" or tam==\"XG\":\n            self.__tamanho= tam\n            return\n        print (f\" tamanho despropocional\")\n    \n    def get_tamanho(self):\n        return self.__tamanho\n\ndef main():\n    camisa=Camisa()\n    while True:\n        n= input()\n        camisa.set_tamanho(n)\n        if camisa.get_tamanho() != \"\":\n            break\n\n    print(camisa)\nmain()",
+            "lines": "26"
+        }
+    ]
+}

@@ -4,16 +4,19 @@ version: 0.0.1
 database: database
 expanded:
 - campanha-principal
-- bloco_b-primeiras-classes
+- bloco_b-modificadores-de-acesso
 tasks:
   toalha: '{rate:100, flow:6, edge:5}'
   animal: '{rate:100, flow:6, edge:5}'
   carro: '{rate:100, flow:6, edge:5}'
+  calculadora: '{rate:100, flow:6, edge:5}'
   enxugar: '{rate:100, flow:6, edge:5}'
+  chinela: '{rate:100, flow:6, edge:5}'
+  camisa: '{rate:100, flow:6, edge:5}'
 flags:
   quests: 0
   tracks: 0
   tasks: 0
   graph: 0
   xray: 0
-index: animal
+index: camisa

@@ -52,6 +52,26 @@
         },
         {
             "label": "2025-09-23_18-49-56",
+            "content": "@@ -860,16 +860,61 @@\n f cmd ==\n+ %22end%22:%0A            break%0A        elif cmd ==\n  %22criar%22\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-10-03_11-06-06",
+            "content": "@@ -864,53 +864,8 @@\n d ==\n- %22end%22:%0A            break%0A        elif cmd ==\n  %22cr\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-10-03_11-06-15",
+            "content": "@@ -884,16 +884,13 @@\n     \n-continue\n+break\n %0A   \n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-10-03_11-06-34",
+            "content": "@@ -884,13 +884,16 @@\n     \n-break\n+continue\n %0A   \n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-10-03_11-07-06",
             "content": "class Towel:\n    def __init__(self, color: str, size : str):\n        self.color: str = color\n        self.size: str = size\n        self.wetness: int = 0\n\n    def getMaxWetness(self):\n        if(self.size == 'P'):return 10\n        elif(self.size == 'M'): return 20\n        else: return 30\n\n    def isDry(self):\n        return self.wetness == 0\n\n    def dry(self, amout : int):\n        self.wetness += amout\n        if self.wetness >= self.getMaxWetness():\n            print(\"toalha encharcada\")\n            self.wetness = self.getMaxWetness()\n\n    def wrigOut(self):\n        self.wetness = 0\n\n    def __str__(self):\n        return f\"Cor: {self.color}, Tamanho: {self.size}, Umidade: {self.wetness}\"\n\n    \ndef main():\n    towel = None\n\n    while True:\n        line = input()\n        print(f\"${line}\")\n        part = line.split()\n\n        cmd = part[0]\n        if cmd == \"end\":\n            break\n        elif cmd == \"criar\":\n            color = part[1]\n            size = part[2]\n            towel = Towel(color, size)\n        elif cmd == \"mostrar\":\n            print(towel)\n        elif cmd == \"enxugar\":\n            amout = int(part[1])\n            towel.dry(amout)\n        elif cmd == \"torcer\":\n            towel.wrigOut()\n        elif cmd == \"seca\":\n            if(towel.isDry()):\n                print(\"sim\")\n            else:\n                print(\"nao\")\n        else:\n            print(\"fail: comando invalido\")\n\nmain()",
             "lines": "58"
         }

@@ -1,0 +1,99 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-02_08-49-59",
+            "content": "@@ -1549,12 +1549,4 @@\n do%22)\n-%0A%0Amain()\n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-10-02_08-50-17",
+            "content": "@@ -943,20 +943,8 @@\n ator\n-:Calculator \n =Cal\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-10-02_08-50-35",
+            "content": "@@ -963,16 +963,17 @@\n culator(\n+0\n )%0A    wh\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-10-02_08-50-47",
+            "content": "@@ -1164,24 +1164,36 @@\n =Calculator(\n+int(args%5B1%5D)\n )%0A        el\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-10-02_08-51-34",
+            "content": "@@ -967,10 +967,8 @@\n tor(\n-%22%22\n )%0A  \n@@ -1168,28 +1168,16 @@\n culator(\n-int(args%5B1%5D)\n )%0A      \n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-10-02_08-51-52",
+            "content": "@@ -78,17 +78,26 @@\n y:int = \n-0\n+batteryMax\n %0A       \n@@ -115,34 +115,25 @@\n ryMax:int = \n-batteryMax\n+0\n %0A        sel\n@@ -963,17 +963,18 @@\n culator(\n-0\n+%22%22\n )%0A    wh\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-10-02_08-52-37",
+            "content": "@@ -44,16 +44,17 @@\n teryMax:\n+ \n int):%0A  \n@@ -931,32 +931,44 @@\n :%0A    calculator\n+:Calculator \n =Calculator(0)%0A \n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-10-02_08-56-07",
+            "content": "@@ -950,16 +950,17 @@\n culator(\n+0\n )%0A    wh\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-10-02_08-56-14",
+            "content": "@@ -950,17 +950,16 @@\n culator(\n-0\n )%0A    wh\n@@ -1125,37 +1125,8 @@\n t%22:%0A\n-            n = int(args%5B1%5D)%0A\n     \n@@ -1155,17 +1155,28 @@\n culator(\n-n\n+int(args%5B1%5D)\n )%0A      \n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-10-02_08-58-41",
+            "content": "@@ -31,16 +31,32 @@\n i__(self\n+, batteryMax:int\n ):%0A     \n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-10-02_08-58-53",
+            "content": "@@ -35,24 +35,8 @@\n self\n-, batteryMax:int\n ):%0A \n@@ -58,28 +58,16 @@\n tery\n-Max\n :int = \n-batteryMax\n+0\n %0A   \n@@ -79,32 +79,44 @@\n self.battery\n+Max\n :int = \n-0\n+batteryMax\n %0A        sel\n@@ -923,17 +923,16 @@\n culator=\n- \n Calculat\n@@ -1106,16 +1106,45 @@\n %22init%22:%0A\n+            n = int(args%5B1%5D)%0A\n         \n@@ -1169,28 +1169,17 @@\n culator(\n-int(args%5B1%5D)\n+n\n )%0A      \n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-10-02_09-00-02",
+            "content": "@@ -1127,49 +1127,8 @@\n t%22:%0A\n-            increment:int = int(args%5B1%5D)%0A\n     \n@@ -1159,23 +1159,26 @@\n lator(in\n-crement\n+t(args%5B1%5D)\n )%0A      \n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-10-02_09-01-36",
+            "content": "@@ -928,17 +928,17 @@\n ():%0A    \n-C\n+c\n alculato\n@@ -938,18 +938,19 @@\n lculator\n-(c\n+= C\n alculato\n@@ -954,11 +954,11 @@\n ator\n-)=0\n+(0)\n %0A   \n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-10-02_09-02-31",
+            "content": "@@ -924,24 +924,35 @@\n main():%0A    \n+Calculator(\n calculator= \n@@ -953,14 +953,11 @@\n ator\n-= None\n+)=0\n %0A   \n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-10-02_09-02-48",
+            "content": "@@ -43,16 +43,20 @@\n tteryMax\n+:int\n ):%0A     \n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-10-02_09-03-01",
+            "content": "@@ -43,20 +43,16 @@\n tteryMax\n-:int\n ):%0A     \n@@ -938,37 +938,14 @@\n ator\n- : Calculator = Calculator(0)\n+= None\n %0A   \n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-10-02_09-04-52",
+            "content": "@@ -24,17 +24,16 @@\n ef __ini\n-t\n __(self,\n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-10-02_18-01-44",
+            "content": "@@ -333,32 +333,35 @@\n crement%0A        \n+if \n self.battery = m\n@@ -360,28 +360,26 @@\n tery\n- = min(self.battery,\n+%3E=100:%0A           \n  sel\n@@ -391,12 +391,12 @@\n tery\n-Max)\n+=100\n %0A   \n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-10-02_18-02-48",
+            "content": "class Calculator:\n    def __init__(self, batteryMax:int):\n        self.batteryMax:int = batteryMax\n        self.battery:int = 0\n        self.display:float = 0\n\n    def __str__(self)->str:\n        return f\"display = {self.display:.2f}, battery = {self.battery}\"\n    \n    def recarregar(self, increment:int ):\n        self.battery+=increment\n        self.battery = min(self.battery, self.batteryMax)\n    \n    def soma(self, a: int, b:int):\n        if self.battery==0:\n            print(\"fail: bateria insuficiente\")\n            return \n        self.display= a+b\n        self.battery-=1\n        self.battery = max(self.battery, 0)\n\n    def dividir(self, num:float, den:float):\n        if self.battery==0:\n           print(\"fail: bateria insuficiente\")\n           return \n       \n        self.battery-=1\n        if den==0:\n            print(\"fail: divisao por zero\")\n            return\n        self.display= num/den \n\n    \ndef main():\n    calculator : Calculator = Calculator(0)\n    while True:\n        line = input()\n        args = line.split() \n        print(f\"${line}\")\n        if args[0]==\"end\":\n            break\n        elif args[0]==\"init\":\n            increment:int = int(args[1])\n            calculator=Calculator(increment)\n        elif args[0]==\"show\":\n            print(calculator)\n        elif args[0]==\"charge\":\n            calculator.recarregar(int(args[1]))\n        elif args[0]==\"sum\":\n            calculator.soma(int(args[1]), int(args[2]))\n        elif args[0]==\"div\":\n            calculator.dividir(float(args[1]), float(args[2]))\n        else:\n            print(\"fail: comando invalido\")\n\nmain()",
+            "lines": "56"
+        }
+    ]
+}

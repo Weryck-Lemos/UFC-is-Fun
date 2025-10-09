@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-08_15-13-45",
+            "content": "@@ -616,12 +616,4 @@\n la)%0A\n-%0A%0Amain()\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-08_15-14-04",
+            "content": "@@ -8,16 +8,17 @@\n hinela:%0A\n+%0A\n     def \n@@ -55,31 +55,23 @@\n _tam\n-anho: int\n  = 0%0A%0A\n+%0A\n     def \n __st\n@@ -70,71 +70,91 @@\n def \n-__str__(self)-%3Estr:%0A        return f%22tamanho: %7B\n+verif_tam(self, ) -%3E bool:%0A        return self.get_tam %3E=20 and \n self.\n-_\n+get\n _tam\n-anho%7D%22\n+ %3C= 50 \n %0A   \n@@ -167,35 +167,28 @@\n def \n-s\n+g\n et_tam\n-anho\n (self\n-, tam:\n+) -%3E\n  int\n-)\n :%0A  \n@@ -197,43 +197,61 @@\n     \n-if tam%3E=20 and tam%3C=50 and tam%252==0\n+return self.__tam%0A    %0A    def set_tam(self, tam:int)\n :%0A  \n@@ -260,31 +260,31 @@\n     \n-   \n+if\n  self.\n-__tamanho= \n+verif_tam(\n tam\n+):\n %0A   \n@@ -296,76 +296,54 @@\n     \n-return%0A        print(%22tamanho inv%C3%A1lido%22)%0A%0A%0A    def get_tamanho(self)\n+self.__tam = tam%0A%0A    def __str__(self) -%3E str\n :%0A  \n@@ -347,32 +347,44 @@\n %0A        return \n+f'Tamanho: %7B\n self.__tamanho%0A%0A\n@@ -377,20 +377,19 @@\n lf.__tam\n-anho\n+%7D'%0A\n %0A%0Adef ma\n@@ -405,17 +405,19 @@\n  chinela\n-=\n+ = \n Chinela(\n@@ -418,16 +418,17 @@\n inela()%0A\n+%0A\n     whil\n@@ -443,17 +443,21 @@\n         \n-n\n+line \n = int(in\n@@ -471,24 +471,27 @@\n         \n+if \n chinela.\n set_tama\n@@ -486,31 +486,34 @@\n ela.\n-set_tamanho(n)%0A\n+verif_tam(line):%0A \n         \n if c\n@@ -500,34 +500,34 @@\n line):%0A         \n-if\n+  \n  chinela.get_tam\n@@ -523,25 +523,21 @@\n ela.\n-g\n+s\n et_tam\n-anho()!=0:\n+(line)\n %0A   \n@@ -552,16 +552,57 @@\n  break%0A%0A\n+        print(%22Tamanho inv%C3%A1lido 20-50%22)%0A%0A\n     prin\n@@ -611,8 +611,17 @@\n chinela)\n+%0A%0A%0Amain()\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-09_09-10-20",
+            "content": "@@ -552,12 +552,4 @@\n ela)\n-%0A%0Amain()\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-09_09-11-06",
+            "content": "@@ -114,21 +114,8 @@\n n f%22\n-sua xinela %C3%A9 \n tama\n",
+            "lines": "28"
+        },
+        {
+            "label": "2025-10-09_09-11-49",
+            "content": "class Chinela:\n    def __init__(self):\n        self.__tamanho: int = 0\n\n    def __str__(self)->str:\n        return f\"sua xinela \u00e9 tamanho: {self.__tamanho}\"\n    \n    def set_tamanho(self, tam: int):\n        if tam>=20 and tam<=50 and tam%2==0:\n            self.__tamanho= tam\n            return\n        print(\"tamanho inv\u00e1lido\")\n\n\n    def get_tamanho(self):\n        return self.__tamanho\n\ndef main():\n    chinela=Chinela()\n    while True:\n        n= int(input())\n        chinela.set_tamanho(n)\n        if chinela.get_tamanho()!=0:\n            break\n\n    print(chinela)\n\nmain()",
+            "lines": "28"
+        }
+    ]
+}
