@@ -1,0 +1,69 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-09_16-18-48",
+            "content": "@@ -143,13 +143,8 @@\n elf)\n-_%3Estr\n :%0A  \n@@ -171,17 +171,17 @@\n .__hour:\n-0\n+.\n 2%7D:%7Bself\n@@ -190,17 +190,17 @@\n _minute:\n-0\n+.\n 2%7D:%7Bself\n@@ -209,17 +209,17 @@\n _second:\n-0\n+.\n 2%7D%22%0A    \n@@ -223,1356 +223,49 @@\n    %0A\n-    def get_hour(self)_%3Eint:%0A        return self.__hour%0A    %0A    def get_minute(self)-%3Eint:%0A        return self.__minute%0A    %0A    def get_second(self)-%3Eint:%0A        return self.__second%0A    %0A    def set_hour(self, h:int):%0A        if h%3E=0 and h%3C=23:%0A            self.__hour = h%0A            return%0A        print(%22fail: hora invalida%22)%0A%0A    def set_minute(self, m:int):%0A        if m%3E=0 and m%3C=59:%0A            self.__minute = m%0A            return%0A        print(%22fail: minuto invalida%22)%0A%0A    def set_second(self, s:int):%0A        if s%3E=0 and s%3C=59:%0A            self.__second = s%0A            return%0A        print(%22fail: segundo invalida%22)%0A%0A    def next_second(self, s:int):%0A        self.__second += 1%0A        if(self.__second %3E=60):%0A            self.__minute +=1%0A            if(self.__minute %3E=60):%0A                self.hour +=1%0A                if(self.hour %3E= 24):%0A                    self.hour = 0%0A%0A%0A    %0A    %0Adef main():%0A    time = Time()%0A    %0A    while True:%0A        line = input()%0A        print(f%22$%7Bline%7D%22)%0A        args = line.split()%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A        elif args%5B0%5D == %22set%22:%0A            time.set_hour(int(args%5B1%5D))%0A            time.set_minute(int(args%5B2%5D))%0A            time.set_second(int(args%5B3%5D)) %0A        elif args%5B0%5D == %22show%22:%0A            print(time)%0A        else:%0A            print(%22comando invalido%22)%0A%0Amain(\n+def main():%0A    time = Time()%0A    print(time\n )\n",
+            "lines": "12"
+        },
+        {
+            "label": "2025-10-09_16-50-33",
+            "content": "@@ -242,25 +242,25 @@\n t_hour(self)\n--\n+_\n %3Eint:%0A      \n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-10-09_16-50-41",
+            "content": "@@ -139,17 +139,17 @@\n __(self)\n--\n+_\n %3Estr:%0A  \n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-10-09_16-50-51",
+            "content": "@@ -694,33 +694,33 @@\n : minuto invalid\n-o\n+a\n %22)%0A%0A    def set_\n@@ -848,25 +848,25 @@\n undo invalid\n-o\n+a\n %22)%0A%0A    def \n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-10-09_16-51-07",
+            "content": "@@ -1521,71 +1521,8 @@\n me)%0A\n-        elif args%5B0%5D == %22next%22:%0A            time.next_second()%0A\n     \n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-10-09_16-51-38",
+            "content": "@@ -877,24 +877,31 @@\n _second(self\n+, s:int\n ):%0A        s\n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-10-09_16-51-55",
+            "content": "@@ -1059,26 +1059,24 @@\n     if(self.\n-__\n hour %3E= 24):\n@@ -1097,26 +1097,24 @@\n        self.\n-__\n hour = 0%0A%0A%0A \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-10-09_16-52-29",
+            "content": "@@ -1026,26 +1026,24 @@\n        self.\n-__\n hour +=1%0A   \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-10-09_16-52-37",
+            "content": "@@ -977,38 +977,8 @@\n +=1%0A\n-            self.__second = 0%0A\n     \n@@ -1045,40 +1045,8 @@\n +=1%0A\n-                self.__minute=0%0A\n     \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-10-09_16-53-50",
+            "content": "@@ -30,48 +30,8 @@\n self\n-, hour:int=0, minute:int=0, second:int=0\n ):%0A \n@@ -55,20 +55,17 @@\n r:int = \n-hour\n+0\n %0A       \n@@ -85,22 +85,17 @@\n e:int = \n-minute\n+0\n %0A       \n@@ -115,22 +115,17 @@\n d:int = \n-second\n+0\n %0A%0A    de\n@@ -1370,106 +1370,8 @@\n eak%0A\n-        elif args%5B0%5D == %22init%22:%0A            time = Time(int(args%5B1%5D), int(args%5B2%5D), int(args%5B3%5D))%0A\n     \n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-10-09_16-55-38",
+            "content": "@@ -99,27 +99,12 @@\n t = \n-self.set_hour(hour)\n+hour\n %0A   \n@@ -132,31 +132,14 @@\n t = \n-self.set_minute(minute)\n+minute\n %0A   \n@@ -169,29 +169,12 @@\n = se\n-lf.set_second(second)\n+cond\n %0A%0A  \n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-10-09_17-04-14",
+            "content": "@@ -92,72 +92,14 @@\n hour\n- = 0%0A        self.__minute = 0%0A        self.__second = 0%0A       \n+:int =\n  sel\n@@ -114,32 +114,52 @@\n ur(hour)%0A       \n+ self.__minute:int =\n  self.set_minute\n@@ -170,24 +170,44 @@\n ute)%0A       \n+ self.__second:int =\n  self.set_se\n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-10-09_17-05-47",
+            "content": "class Time:\n    def __init__(self, hour:int=0, minute:int=0, second:int=0):\n        self.__hour = 0\n        self.__minute = 0\n        self.__second = 0\n        self.set_hour(hour)\n        self.set_minute(minute)\n        self.set_second(second)\n\n    def __str__(self)->str:\n        return f\"{self.__hour:02}:{self.__minute:02}:{self.__second:02}\"\n    \n    def get_hour(self)->int:\n        return self.__hour\n    \n    def get_minute(self)->int:\n        return self.__minute\n    \n    def get_second(self)->int:\n        return self.__second\n    \n    def set_hour(self, h:int):\n        if h>=0 and h<=23:\n            self.__hour = h\n            return\n        print(\"fail: hora invalida\")\n\n    def set_minute(self, m:int):\n        if m>=0 and m<=59:\n            self.__minute = m\n            return\n        print(\"fail: minuto invalido\")\n\n    def set_second(self, s:int):\n        if s>=0 and s<=59:\n            self.__second = s\n            return\n        print(\"fail: segundo invalido\")\n\n    def next_second(self):\n        self.__second += 1\n        if(self.__second >=60):\n            self.__minute +=1\n            self.__second = 0\n            if(self.__minute >=60):\n                self.__hour +=1\n                self.__minute=0\n                if(self.__hour >= 24):\n                    self.__hour = 0\n\n\n    \n    \ndef main():\n    time = Time()\n    \n    while True:\n        line = input()\n        print(f\"${line}\")\n        args = line.split()\n\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"init\":\n            time = Time(int(args[1]), int(args[2]), int(args[3]))\n        elif args[0] == \"set\":\n            time.set_hour(int(args[1]))\n            time.set_minute(int(args[2]))\n            time.set_second(int(args[3])) \n        elif args[0] == \"show\":\n            print(time)\n        elif args[0] == \"next\":\n            time.next_second()\n        else:\n            print(\"comando invalido\")\n\nmain()",
+            "lines": "77"
+        }
+    ]
+}

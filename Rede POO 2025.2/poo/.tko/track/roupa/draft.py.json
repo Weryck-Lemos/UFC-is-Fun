@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-09_16-04-59",
+            "content": "@@ -104,17 +104,17 @@\n rn f%22Siz\n-e\n+w\n : (%7Bself\n@@ -418,33 +418,8 @@\n t()%0A\n-        print(%22$%7Bline%7D%22)%0A\n     \n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-09_16-05-38",
+            "content": "@@ -428,17 +428,16 @@\n   print(\n-f\n %22$%7Bline%7D\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-09_16-05-49",
+            "content": "@@ -101,17 +101,17 @@\n eturn f%22\n-s\n+S\n ize: (%7Bs\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-09_16-06-04",
+            "content": "class Roupa:\n    def __init__(self):\n        self.__size: str = \"\"\n\n    def __str__(self):\n        return f\"size: ({self.__size})\"\n    \n    def set_tamanho(self, size:str):\n        if size in [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]:\n            self.__size = size\n            return\n        print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\n    \ndef main():\n    roupa = Roupa()\n\n    while True:\n        line = input()\n        print(f\"${line}\")\n        args = line.split()\n\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"init\":\n            roupa = Roupa(args[1])\n        elif args[0] == \"show\":\n            print(roupa)\n        elif args[0] == \"size\":\n            roupa.set_tamanho(args[1])\n        else:\n            print(\"comando inv\u00e1lido\")\n\nmain()",
+            "lines": "33"
+        }
+    ]
+}
