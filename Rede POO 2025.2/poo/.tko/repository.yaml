@@ -1,10 +1,19 @@
-remote: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
-lang: py
-version: 0.0.1
-database: database
+version: '0.2'
+sources:
+- database: database
+  link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
+  cache_path: /home/weryck/Documentos/UFC is Fun/Rede POO 2025.2/poo/.tko/cache/database.md
+  cache_timestamp: '2025-10-15 22:15:38'
+  filters: null
+- database: local
+  link: ''
+  cache_path: ''
+  cache_timestamp: ''
+  filters: null
 expanded:
 - campanha-principal
-- bloco_b-modificadores-de-acesso
+- bloco_b-agregação-simples
+- configuracao-e-aquecimento
 tasks:
   toalha: '{rate:100, flow:6, edge:5}'
   animal: '{rate:100, flow:6, edge:5}'
@@ -15,10 +24,12 @@ tasks:
   camisa: '{rate:100, flow:6, edge:5}'
   roupa: '{rate:100, flow:6, edge:5}'
   relogio: '{rate:100, flow:6, edge:5}'
+  motoca: '{rate:100, alone:10}'
 flags:
   quests: 0
   tracks: 0
   tasks: 0
   graph: 0
   xray: 0
-index: chinela
+lang: py
+selected: motoca

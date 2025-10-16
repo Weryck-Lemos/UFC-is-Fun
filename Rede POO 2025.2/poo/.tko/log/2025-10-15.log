@@ -1,0 +1,37 @@
+2025-10-15 22:36:39, MOVE, v:1, k:motoca, mode:PICK
+2025-10-15 22:36:40, EXEC, v:1, k:motoca, mode:FULL, rate:0, size:92
+2025-10-15 22:40:09, EXEC, v:1, k:motoca, mode:FULL, rate:0, size:97
+2025-10-15 22:40:14, EXEC, v:1, k:motoca, mode:FREE
+2025-10-15 22:40:30, EXEC, v:1, k:motoca, mode:FULL, rate:0, size:97
+2025-10-15 22:40:50, EXEC, v:1, k:motoca, mode:FULL, rate:0, size:97
+2025-10-15 22:41:07, EXEC, v:1, k:motoca, mode:FULL, rate:6, size:97
+2025-10-15 22:41:25, EXEC, v:1, k:motoca, mode:FULL, rate:6, size:97
+2025-10-15 22:41:43, EXEC, v:1, k:motoca, mode:FULL, rate:6, size:97
+2025-10-15 22:41:57, EXEC, v:1, k:motoca, mode:FULL, rate:13, size:97
+2025-10-15 22:42:11, EXEC, v:1, k:motoca, mode:FULL, rate:20, size:97
+2025-10-15 22:42:48, EXEC, v:1, k:motoca, mode:FULL, rate:53, size:97
+2025-10-15 22:43:07, EXEC, v:1, k:motoca, mode:FULL, rate:60, size:97
+2025-10-15 22:43:18, EXEC, v:1, k:motoca, mode:FULL, rate:60, size:97
+2025-10-15 22:44:22, EXEC, v:1, k:motoca, mode:FULL, rate:60, size:97
+2025-10-15 22:47:36, EXEC, v:1, k:motoca, mode:FULL, rate:66, size:97
+2025-10-15 22:52:39, EXEC, v:1, k:motoca, mode:FULL, rate:73, size:97
+2025-10-15 22:54:09, EXEC, v:1, k:motoca, mode:FULL, rate:73, size:94
+2025-10-15 22:54:33, EXEC, v:1, k:motoca, mode:FULL, rate:6, size:94
+2025-10-15 22:55:16, MOVE, v:1, k:motoca, mode:PICK
+2025-10-15 22:55:17, EXEC, v:1, k:motoca, mode:FULL, rate:6
+2025-10-15 22:55:37, EXEC, v:1, k:motoca, mode:FULL, rate:73, size:94
+2025-10-15 22:57:11, EXEC, v:1, k:motoca, mode:FULL, rate:73, size:94
+2025-10-15 22:59:05, EXEC, v:1, k:motoca, mode:FULL, rate:73, size:94
+2025-10-15 23:00:45, EXEC, v:1, k:motoca, mode:FULL, rate:73, size:94
+2025-10-15 23:01:34, EXEC, v:1, k:motoca, mode:FULL, rate:73, size:94
+2025-10-15 23:02:57, EXEC, v:1, k:motoca, mode:FULL, rate:40, size:94
+2025-10-15 23:03:30, EXEC, v:1, k:motoca, mode:FULL, rate:40
+2025-10-15 23:04:00, EXEC, v:1, k:motoca, mode:FULL, rate:6, size:94
+2025-10-15 23:04:21, EXEC, v:1, k:motoca, mode:FULL, rate:6, size:94
+2025-10-15 23:04:38, EXEC, v:1, k:motoca, mode:FULL, rate:40, size:94
+2025-10-15 23:05:04, EXEC, v:1, k:motoca, mode:FULL, rate:100, size:94
+2025-10-15 23:05:07, MOVE, v:1, k:motoca, mode:BACK
+2025-10-15 23:05:12, SELF, v:1, k:motoca, rate:100, alone:10
+2025-10-15 23:05:17, MOVE, v:1, k:motoca, mode:PICK
+2025-10-15 23:05:20, EXEC, v:1, k:motoca, mode:FULL, rate:100
+2025-10-15 23:08:34, MOVE, v:1, k:motoca, mode:BACK

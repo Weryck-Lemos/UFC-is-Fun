@@ -1,0 +1,30 @@
+2025-10-14 15:16:31, MOVE, v:1, k:relogio, mode:PICK
+2025-10-14 15:16:32, EXEC, v:1, k:relogio, mode:FULL, rate:0, size:144
+2025-10-14 15:16:38, EXEC, v:1, k:relogio, mode:FULL, rate:0
+2025-10-14 15:16:52, EXEC, v:1, k:relogio, mode:FULL, rate:0, size:78
+2025-10-14 15:17:03, EXEC, v:1, k:relogio, mode:FULL, rate:100, size:78
+2025-10-14 15:17:04, MOVE, v:1, k:relogio, mode:BACK
+2025-10-14 15:18:01, MOVE, v:1, k:notebook, mode:DOWN
+2025-10-14 15:18:05, MOVE, v:1, k:notebook, mode:DOWN
+2025-10-14 15:18:30, MOVE, v:1, k:motoca, mode:DOWN
+2025-10-14 15:18:40, MOVE, v:1, k:motoca, mode:DOWN
+2025-10-14 15:18:40, MOVE, v:1, k:motoca, mode:DOWN
+2025-10-14 15:20:26, MOVE, v:1, k:array, mode:DOWN
+2025-10-14 15:21:43, MOVE, v:1, k:notebook, mode:DOWN
+2025-10-14 15:21:56, MOVE, v:1, k:notebook, mode:DOWN
+2025-10-14 15:23:01, MOVE, v:1, k:motoca, mode:DOWN
+2025-10-14 15:25:11, MOVE, v:1, k:motoca, mode:DOWN
+2025-10-14 15:25:14, MOVE, v:1, k:notebook, mode:DOWN
+2025-10-14 15:30:22, MOVE, v:1, k:notebook, mode:DOWN
+2025-10-14 15:30:23, MOVE, v:1, k:motoca, mode:DOWN
+2025-10-14 15:40:11, MOVE, v:1, k:notebook, mode:DOWN
+2025-10-14 15:40:13, MOVE, v:1, k:motoca, mode:DOWN
+2025-10-14 15:40:30, MOVE, v:1, k:notebook, mode:PICK
+2025-10-14 15:40:31, EXEC, v:1, k:notebook, mode:LOCK, rate:100, size:0
+2025-10-14 15:40:33, MOVE, v:1, k:notebook, mode:BACK
+2025-10-14 15:40:34, MOVE, v:1, k:motoca, mode:PICK
+2025-10-14 15:40:35, EXEC, v:1, k:motoca, mode:FULL, rate:0, size:0
+2025-10-14 15:40:36, MOVE, v:1, k:motoca, mode:BACK
+2025-10-14 15:40:37, MOVE, v:1, k:notebook, mode:PICK
+2025-10-14 15:40:37, EXEC, v:1, k:notebook, mode:LOCK, rate:100
+2025-10-14 15:40:38, MOVE, v:1, k:notebook, mode:BACK

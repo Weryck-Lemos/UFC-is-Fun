@@ -1,0 +1,16 @@
+2025-10-13 10:30:45, MOVE, v:1, k:relogio, mode:PICK
+2025-10-13 10:30:46, EXEC, v:1, k:relogio, mode:FULL, rate:100
+2025-10-13 10:30:54, EXEC, v:1, k:relogio, mode:FULL, rate:46, size:77
+2025-10-13 10:31:18, EXEC, v:1, k:relogio, mode:FULL, rate:100, size:77
+2025-10-13 10:33:51, MOVE, v:1, k:relogio, mode:BACK
+2025-10-13 16:53:42, MOVE, v:1, k:roupa, mode:PICK
+2025-10-13 16:53:43, EXEC, v:1, k:roupa, mode:FULL, rate:100
+2025-10-13 16:53:46, MOVE, v:1, k:roupa, mode:BACK
+2025-10-13 16:53:47, MOVE, v:1, k:relogio, mode:PICK
+2025-10-13 16:53:48, EXEC, v:1, k:relogio, mode:FULL, rate:100, size:78
+2025-10-13 16:56:10, EXEC, v:1, k:relogio, mode:FULL, rate:0, size:81
+2025-10-13 16:57:59, EXEC, v:1, k:relogio, mode:FULL, rate:0, size:81
+2025-10-13 17:00:53, EXEC, v:1, k:relogio, mode:FULL, rate:100, size:76
+2025-10-13 17:23:17, EXEC, v:1, k:relogio, mode:FULL, rate:0, size:76
+2025-10-13 17:32:15, EXEC, v:1, k:relogio, mode:FULL, rate:100, size:80
+2025-10-13 18:14:22, EXEC, v:1, k:relogio, mode:FULL, rate:100, size:76
