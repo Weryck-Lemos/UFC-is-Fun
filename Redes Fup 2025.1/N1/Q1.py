@@ -13,5 +13,3 @@ elif a1==90 or a2==90 or a3==90:
 
 else:
     print("Obtusângulo")
-
-
