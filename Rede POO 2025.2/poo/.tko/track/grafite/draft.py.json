@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-23_21-23-30",
+            "content": "@@ -2353,18 +2353,12 @@\n alido%22)%0A\n-main()\n     \n",
+            "lines": "93"
+        },
+        {
+            "label": "2025-10-23_21-23-45",
+            "content": "@@ -1395,26 +1395,24 @@\n ead.get_size\n-()\n  - n %3C10:%0A  \n",
+            "lines": "93"
+        },
+        {
+            "label": "2025-10-23_21-24-19",
+            "content": "@@ -221,13 +221,8 @@\n elf)\n--%3Eint\n :%0A  \n",
+            "lines": "93"
+        },
+        {
+            "label": "2025-10-23_21-24-35",
+            "content": "@@ -213,24 +213,29 @@\n rSheet(self)\n+-%3Eint\n :%0A        if\n@@ -1344,20 +1344,16 @@\n     n = \n-int(\n self.__l\n@@ -1371,17 +1371,16 @@\n rSheet()\n-)\n %0A%0A      \n",
+            "lines": "93"
+        },
+        {
+            "label": "2025-10-23_21-27-48",
+            "content": "@@ -1335,16 +1335,52 @@\n         \n+n = int(self.__lead.usagePerSheet())\n %0A%0A      \n@@ -1413,35 +1413,9 @@\n ) - \n-self.__lead.usagePerSheet()\n+n\n  %3C10\n@@ -1582,35 +1582,9 @@\n ) - \n-self.__lead.usagePerSheet()\n+n\n )%0A%0A \n",
+            "lines": "93"
+        },
+        {
+            "label": "2025-10-23_21-28-29",
+            "content": "@@ -229,35 +229,16 @@\n       if\n- self.__hardness ==\n  %22HB%22: r\n@@ -255,35 +255,16 @@\n       if\n- self.__hardness ==\n  %222B%22: r\n@@ -285,27 +285,8 @@\n   if\n- self.__hardness ==\n  %224B\n@@ -1339,39 +1339,8 @@\n     \n-n = self.__lead.usagePerSheet()\n %0A%0A  \n@@ -1373,17 +1373,43 @@\n ize() - \n-n\n+self.__lead.usagePerSheet()\n  %3C10:%0A  \n@@ -1568,17 +1568,43 @@\n ize() - \n-n\n+self.__lead.usagePerSheet()\n )%0A%0A    d\n",
+            "lines": "93"
+        },
+        {
+            "label": "2025-10-23_21-32-00",
+            "content": "@@ -1388,116 +1388,8 @@\n f):%0A\n-        if not self.hasGrafite():%0A            print(%22fail: nao existe grafite%22)%0A            return%0A        %0A\n     \n",
+            "lines": "93"
+        },
+        {
+            "label": "2025-10-23_21-34-12",
+            "content": "@@ -1492,25 +1492,16 @@\n        %0A\n-        %0A\n         \n@@ -1604,28 +1604,24 @@\n ail \n-tamanho insuficiente\n+folha incompleta\n %22)%0A \n",
+            "lines": "97"
+        },
+        {
+            "label": "2025-10-23_21-35-07",
+            "content": "@@ -1608,17 +1608,16 @@\n nt(%22fail\n-:\n  tamanho\n",
+            "lines": "98"
+        },
+        {
+            "label": "2025-10-23_21-35-16",
+            "content": "@@ -1496,116 +1496,8 @@\n    %0A\n-        if self.__lead.get_size() %3C= 10:%0A            print(%22fail: tamanho insuficiente%22)%0A            return%0A\n     \n@@ -1493,32 +1493,32 @@\n       %0A        %0A\n+\n         n = self\n@@ -1612,25 +1612,30 @@\n fail\n- folha incompleta\n+: tamanho insuficiente\n %22)%0A \n",
+            "lines": "98"
+        },
+        {
+            "label": "2025-10-23_21-36-01",
+            "content": "@@ -1716,17 +1716,16 @@\n nt(%22fail\n-:\n  folha i\n",
+            "lines": "101"
+        },
+        {
+            "label": "2025-10-23_21-36-12",
+            "content": "class Lead:\n    def __init__(self, thickness:float, hardness:str, size:int):\n        self.__thickness : float = thickness\n        self.__hardness : str = hardness\n        self.__size : int = size\n\n    def usagePerSheet(self):\n        if self.__hardness == \"HB\": return 1\n        if self.__hardness == \"2B\": return 2\n        if self.__hardness == \"4B\": return 4\n        return 6\n    \n    def set_size(self, size):\n        self.__size = size\n\n    def __str__(self):\n        return f\"[{self.__thickness}:{self.__hardness}:{self.__size}]\"\n    \n    def get_thickness(self):\n        return self.__thickness\n    \n    def get_hardeness(self):\n        return self.__hardness\n    \n    def get_size(self):\n        return self.__size\n\n\nclass Pencil:\n    def __init__(self, thickness:float=0):\n        self.__thickness = thickness\n        self.__lead = None\n\n    def hasGrafite(self):\n        return self.__lead != None\n    \n    def insert(self, lead: Lead):\n        if(self.__thickness != lead.get_thickness()):\n            print(\"fail: calibre incompativel\")\n            return\n        \n        if(self.hasGrafite()):\n            print(\"fail: ja existe grafite\")\n            return\n        \n        self.__lead = lead\n\n    def remove(self):\n        if not self.hasGrafite():\n            print(\"fail: nao existe grafite\")\n            return\n        \n        self.__lead = None\n    \n    def write(self):\n        if not self.hasGrafite():\n            print(\"fail: nao existe grafite\")\n            return\n        \n        if self.__lead.get_size() <= 10:\n            print(\"fail: tamanho insuficiente\")\n            return\n        \n        n = self.__lead.usagePerSheet()\n\n        if self.__lead.get_size() - n <10:\n            print(\"fail: folha incompleta\")\n            self.__lead.set_size(10)\n            return\n        \n        self.__lead.set_size(self.__lead.get_size() - n)\n\n    def __str__(self):\n        lead = \"null\"\n        if self.hasGrafite(): lead = self.__lead\n        return f\"calibre: {self.__thickness}, grafite: {lead}\"\n\n\ndef main():\n    pencil = Pencil()\n    while(1):\n        line = input()\n        print(f\"${line}\")\n        args = line.split()\n\n        if args[0]==\"end\":\n            break\n        elif args[0] == \"init\":\n            pencil = Pencil(float(args[1]))\n        elif args[0] == \"show\":\n            print(pencil)\n        elif args[0] == \"insert\":\n            lead = Lead(float(args[1]), str(args[2]), int(args[3]))\n            pencil.insert(lead)\n        elif args[0] == \"remove\":\n            pencil.remove()\n        elif args[0] == \"write\":\n            pencil.write()\n        else:\n            print(\"fail: comando invalido\")\nmain()    ",
+            "lines": "101"
+        }
+    ]
+}

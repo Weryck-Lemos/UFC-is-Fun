@@ -1,0 +1,31 @@
+2025-10-23 20:10:58, MOVE, v:1, k:motoca, mode:PICK
+2025-10-23 20:11:00, EXEC, v:1, k:motoca, mode:FULL, rate:100
+2025-10-23 20:11:13, EXEC, v:1, k:motoca, mode:FULL, rate:0, size:96
+2025-10-23 20:11:40, EXEC, v:1, k:motoca, mode:FULL, rate:0, size:96
+2025-10-23 20:12:42, EXEC, v:1, k:motoca, mode:FULL, rate:0, size:96
+2025-10-23 20:13:59, EXEC, v:1, k:motoca, mode:FULL, rate:0, size:96
+2025-10-23 20:14:11, EXEC, v:1, k:motoca, mode:FULL, rate:0, size:96
+2025-10-23 20:14:21, EXEC, v:1, k:motoca, mode:FULL, rate:0, size:96
+2025-10-23 20:14:48, EXEC, v:1, k:motoca, mode:FULL, rate:20, size:96
+2025-10-23 20:48:32, EXEC, v:1, k:motoca, mode:FULL, rate:100, size:94
+2025-10-23 20:48:32, MOVE, v:1, k:motoca, mode:BACK
+2025-10-23 20:48:44, SELF, v:1, k:notebook, rate:100, alone:10
+2025-10-23 20:49:10, MOVE, v:1, k:motouber, mode:DOWN
+2025-10-23 20:49:11, MOVE, v:1, k:motouber, mode:DOWN
+2025-10-23 20:49:14, MOVE, v:1, k:grafite, mode:DOWN
+2025-10-23 20:49:14, MOVE, v:1, k:grafite, mode:DOWN
+2025-10-23 21:23:30, MOVE, v:1, k:grafite, mode:PICK
+2025-10-23 21:23:30, EXEC, v:1, k:grafite, mode:FULL, rate:0, size:93
+2025-10-23 21:23:45, EXEC, v:1, k:grafite, mode:FULL, rate:60, size:93
+2025-10-23 21:24:19, EXEC, v:1, k:grafite, mode:FULL, rate:60, size:93
+2025-10-23 21:24:35, EXEC, v:1, k:grafite, mode:FULL, rate:60, size:93
+2025-10-23 21:27:48, EXEC, v:1, k:grafite, mode:FULL, rate:60, size:93
+2025-10-23 21:28:29, EXEC, v:1, k:grafite, mode:FULL, rate:60, size:93
+2025-10-23 21:32:00, EXEC, v:1, k:grafite, mode:FULL, rate:60, size:93
+2025-10-23 21:34:12, EXEC, v:1, k:grafite, mode:FULL, rate:80, size:97
+2025-10-23 21:35:07, EXEC, v:1, k:grafite, mode:FULL, rate:80, size:98
+2025-10-23 21:35:16, EXEC, v:1, k:grafite, mode:FULL, rate:90, size:98
+2025-10-23 21:36:01, EXEC, v:1, k:grafite, mode:FULL, rate:90, size:101
+2025-10-23 21:36:12, EXEC, v:1, k:grafite, mode:FULL, rate:100, size:101
+2025-10-23 21:36:13, MOVE, v:1, k:grafite, mode:BACK
+2025-10-23 21:36:21, SELF, v:1, k:grafite, rate:100, alone:10
