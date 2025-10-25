@@ -3,7 +3,7 @@ sources:
 - database: database
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
   cache_path: /home/ubuntu/Documentos/UFC-is-Fun/Rede POO 2025.2/poo/.tko/cache/database.md
-  cache_timestamp: '2025-10-23 20:10:41'
+  cache_timestamp: '2025-10-24 20:52:37'
   filters: null
 - database: local
   link: ''
@@ -27,6 +27,7 @@ tasks:
   notebook: '{rate:100, alone:10}'
   motoca: '{rate:100, alone:10}'
   grafite: '{rate:100, alone:10}'
+  motouber: '{rate:100, alone:10}'
 flags:
   quests: 0
   tracks: 0

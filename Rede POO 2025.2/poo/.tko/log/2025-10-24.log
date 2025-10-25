@@ -1,0 +1,10 @@
+2025-10-24 21:14:22, MOVE, v:1, k:motouber, mode:PICK
+2025-10-24 21:14:22, EXEC, v:1, k:motouber, mode:FULL, rate:0, size:92
+2025-10-24 21:16:55, EXEC, v:1, k:motouber, mode:FULL, rate:75, size:90
+2025-10-24 21:18:14, EXEC, v:1, k:motouber, mode:FULL, rate:75, size:91
+2025-10-24 21:21:15, EXEC, v:1, k:motouber, mode:FULL, rate:75, size:93
+2025-10-24 21:21:31, EXEC, v:1, k:motouber, mode:FULL, rate:75, size:93
+2025-10-24 21:22:25, EXEC, v:1, k:motouber, mode:FULL, rate:87, size:93
+2025-10-24 21:25:51, EXEC, v:1, k:motouber, mode:FULL, rate:100, size:91
+2025-10-24 21:25:53, MOVE, v:1, k:motouber, mode:BACK
+2025-10-24 21:25:59, SELF, v:1, k:motouber, rate:100, alone:10
