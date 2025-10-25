@@ -1,0 +1,37 @@
+2025-10-25 13:17:35, MOVE, v:1, k:motoca, mode:PICK
+2025-10-25 13:17:36, EXEC, v:1, k:motoca, mode:FULL, rate:100
+2025-10-25 13:17:37, MOVE, v:1, k:motoca, mode:BACK
+2025-10-25 13:17:58, MOVE, v:1, k:motoca, mode:PICK
+2025-10-25 13:17:59, EXEC, v:1, k:motoca, mode:FULL, rate:100
+2025-10-25 13:18:01, MOVE, v:1, k:motoca, mode:BACK
+2025-10-25 13:18:38, MOVE, v:1, k:motoca, mode:PICK
+2025-10-25 13:18:39, EXEC, v:1, k:motoca, mode:FULL, rate:100
+2025-10-25 13:21:03, EXEC, v:1, k:motoca, mode:FULL, rate:100
+2025-10-25 13:21:39, EXEC, v:1, k:motoca, mode:FULL, rate:100
+2025-10-25 13:21:44, MOVE, v:1, k:motoca, mode:BACK
+2025-10-25 13:21:47, MOVE, v:1, k:motouber, mode:PICK
+2025-10-25 13:21:48, EXEC, v:1, k:motouber, mode:FULL, rate:0, size:94
+2025-10-25 13:22:18, MOVE, v:1, k:motouber, mode:BACK
+2025-10-25 13:22:20, MOVE, v:1, k:motoca, mode:PICK
+2025-10-25 13:22:21, EXEC, v:1, k:motoca, mode:FULL, rate:100
+2025-10-25 13:22:46, EXEC, v:1, k:motoca, mode:FULL, rate:0, size:94
+2025-10-25 13:23:28, EXEC, v:1, k:motoca, mode:FULL, rate:0, size:94
+2025-10-25 13:24:06, EXEC, v:1, k:motoca, mode:FULL, rate:6, size:94
+2025-10-25 13:25:02, EXEC, v:1, k:motoca, mode:FULL, rate:33, size:94
+2025-10-25 13:27:43, EXEC, v:1, k:motoca, mode:FULL, rate:33, size:94
+2025-10-25 13:27:53, EXEC, v:1, k:motoca, mode:FULL, rate:33, size:94
+2025-10-25 13:27:58, EXEC, v:1, k:motoca, mode:FULL, rate:73, size:94
+2025-10-25 13:31:17, EXEC, v:1, k:motoca, mode:FULL, rate:0, size:94
+2025-10-25 13:31:34, EXEC, v:1, k:motoca, mode:FULL, rate:73, size:94
+2025-10-25 13:32:13, EXEC, v:1, k:motoca, mode:FULL, rate:0, size:94
+2025-10-25 13:33:06, EXEC, v:1, k:motoca, mode:FULL, rate:73, size:94
+2025-10-25 13:33:18, EXEC, v:1, k:motoca, mode:FULL, rate:86, size:94
+2025-10-25 13:33:42, EXEC, v:1, k:motoca, mode:FULL, rate:93, size:94
+2025-10-25 13:33:53, EXEC, v:1, k:motoca, mode:FULL, rate:100, size:94
+2025-10-25 14:51:23, MOVE, v:1, k:motoca, mode:BACK
+2025-10-25 14:51:44, MOVE, v:1, k:tamagotchi, mode:DOWN
+2025-10-25 14:53:05, MOVE, v:1, k:tamagotchi, mode:DOWN
+2025-10-25 14:56:17, MOVE, v:1, k:charger, mode:DOWN
+2025-10-25 14:56:17, MOVE, v:1, k:charger, mode:DOWN
+2025-10-25 14:56:18, MOVE, v:1, k:charger, mode:DOWN
+2025-10-25 14:56:18, MOVE, v:1, k:charger, mode:DOWN
