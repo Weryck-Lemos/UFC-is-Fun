@@ -1,0 +1,15 @@
+2025-10-27 13:45:56, SELF, v:1, k:motouber, alone:10
+2025-10-27 13:45:56, MOVE, v:1, k:motouber, mode:PICK
+2025-10-27 13:45:57, EXEC, v:1, k:motouber, mode:FULL, rate:100, size:91
+2025-10-27 13:45:58, MOVE, v:1, k:motouber, mode:BACK
+2025-10-27 13:47:55, MOVE, v:1, k:grafite, mode:PICK
+2025-10-27 13:47:56, EXEC, v:1, k:grafite, mode:FULL, rate:10, size:99
+2025-10-27 13:48:09, EXEC, v:1, k:grafite, mode:FULL, rate:10, size:99
+2025-10-27 13:48:21, EXEC, v:1, k:grafite, mode:FULL, rate:100, size:99
+2025-10-27 13:50:50, EXEC, v:1, k:grafite, mode:FULL, rate:100, size:99
+2025-10-27 13:53:02, EXEC, v:1, k:grafite, mode:FULL, rate:0, size:99
+2025-10-27 13:58:41, MOVE, v:1, k:grafite, mode:PICK
+2025-10-27 13:58:42, EXEC, v:1, k:grafite, mode:FULL, rate:100, size:99
+2025-10-27 14:00:10, EXEC, v:1, k:grafite, mode:FULL, rate:100, size:99
+2025-10-27 14:05:53, EXEC, v:1, k:grafite, mode:FULL, rate:100, size:99
+2025-10-27 14:05:55, MOVE, v:1, k:grafite, mode:BACK

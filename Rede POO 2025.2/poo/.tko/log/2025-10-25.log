@@ -35,3 +35,5 @@
 2025-10-25 14:56:17, MOVE, v:1, k:charger, mode:DOWN
 2025-10-25 14:56:18, MOVE, v:1, k:charger, mode:DOWN
 2025-10-25 14:56:18, MOVE, v:1, k:charger, mode:DOWN
+2025-10-25 16:50:28, MOVE, v:1, k:motoca, mode:PICK
+2025-10-25 16:50:29, EXEC, v:1, k:motoca, mode:FULL, rate:100, size:94

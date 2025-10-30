@@ -27,9 +27,9 @@ class Lead:
 
 
 class Pencil:
-    def __init__(self, thickness:float=0):
+    def __init__(self, thickness: float = 0, lead: Lead | None = None):
         self.__thickness = thickness
-        self.__lead = None
+        self.__lead = lead
 
     def hasGrafite(self):
         return self.__lead != None
@@ -71,9 +71,7 @@ class Pencil:
         self.__lead.set_size(self.__lead.get_size() - n)
 
     def __str__(self):
-        lead = "null"
-        if self.hasGrafite(): lead = self.__lead
-        return f"calibre: {self.__thickness}, grafite: {lead}"
+        return f"calibre: {self.__thickness}, grafite: {"null" if self.__lead == None else self.__lead}"
 
 
 def main():

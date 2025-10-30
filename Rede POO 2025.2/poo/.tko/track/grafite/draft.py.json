@@ -57,8 +57,48 @@
         },
         {
             "label": "2025-10-23_21-36-12",
-            "content": "class Lead:\n    def __init__(self, thickness:float, hardness:str, size:int):\n        self.__thickness : float = thickness\n        self.__hardness : str = hardness\n        self.__size : int = size\n\n    def usagePerSheet(self):\n        if self.__hardness == \"HB\": return 1\n        if self.__hardness == \"2B\": return 2\n        if self.__hardness == \"4B\": return 4\n        return 6\n    \n    def set_size(self, size):\n        self.__size = size\n\n    def __str__(self):\n        return f\"[{self.__thickness}:{self.__hardness}:{self.__size}]\"\n    \n    def get_thickness(self):\n        return self.__thickness\n    \n    def get_hardeness(self):\n        return self.__hardness\n    \n    def get_size(self):\n        return self.__size\n\n\nclass Pencil:\n    def __init__(self, thickness:float=0):\n        self.__thickness = thickness\n        self.__lead = None\n\n    def hasGrafite(self):\n        return self.__lead != None\n    \n    def insert(self, lead: Lead):\n        if(self.__thickness != lead.get_thickness()):\n            print(\"fail: calibre incompativel\")\n            return\n        \n        if(self.hasGrafite()):\n            print(\"fail: ja existe grafite\")\n            return\n        \n        self.__lead = lead\n\n    def remove(self):\n        if not self.hasGrafite():\n            print(\"fail: nao existe grafite\")\n            return\n        \n        self.__lead = None\n    \n    def write(self):\n        if not self.hasGrafite():\n            print(\"fail: nao existe grafite\")\n            return\n        \n        if self.__lead.get_size() <= 10:\n            print(\"fail: tamanho insuficiente\")\n            return\n        \n        n = self.__lead.usagePerSheet()\n\n        if self.__lead.get_size() - n <10:\n            print(\"fail: folha incompleta\")\n            self.__lead.set_size(10)\n            return\n        \n        self.__lead.set_size(self.__lead.get_size() - n)\n\n    def __str__(self):\n        lead = \"null\"\n        if self.hasGrafite(): lead = self.__lead\n        return f\"calibre: {self.__thickness}, grafite: {lead}\"\n\n\ndef main():\n    pencil = Pencil()\n    while(1):\n        line = input()\n        print(f\"${line}\")\n        args = line.split()\n\n        if args[0]==\"end\":\n            break\n        elif args[0] == \"init\":\n            pencil = Pencil(float(args[1]))\n        elif args[0] == \"show\":\n            print(pencil)\n        elif args[0] == \"insert\":\n            lead = Lead(float(args[1]), str(args[2]), int(args[3]))\n            pencil.insert(lead)\n        elif args[0] == \"remove\":\n            pencil.remove()\n        elif args[0] == \"write\":\n            pencil.write()\n        else:\n            print(\"fail: comando invalido\")\nmain()    ",
+            "content": "@@ -1895,87 +1895,127 @@\n     \n-return f%22calibre:%7Bself.__thickness%7D:%7B%22null%22 if self.__lead is None else self.__\n+lead = %22null%22%0A        if self.hasGrafite(): lead = self.__lead%0A        return f%22calibre: %7Bself.__thickness%7D, grafite: %7B\n lead\n",
             "lines": "101"
+        },
+        {
+            "label": "2025-10-27_13-47-56",
+            "content": "@@ -1908,17 +1908,16 @@\n calibre:\n- \n %7Bself.__\n@@ -1926,18 +1926,17 @@\n ickness%7D\n-, \n+:\n %7B%22null%22 \n",
+            "lines": "99"
+        },
+        {
+            "label": "2025-10-27_13-48-09",
+            "content": "@@ -1932,17 +1932,8 @@\n ss%7D,\n- grafite:\n  %7B%22n\n",
+            "lines": "99"
+        },
+        {
+            "label": "2025-10-27_13-48-21",
+            "content": "@@ -1961,18 +1961,18 @@\n .__lead \n-==\n+is\n  None el\n",
+            "lines": "99"
+        },
+        {
+            "label": "2025-10-27_13-50-50",
+            "content": "@@ -834,16 +834,10 @@\n lead\n-: Lead %7C\n+ =\n  Non\n",
+            "lines": "99"
+        },
+        {
+            "label": "2025-10-27_13-53-02",
+            "content": "@@ -775,27 +775,8 @@\n at=0\n-, lead: Lead = None\n ):%0A \n@@ -822,39 +822,45 @@\n      self.__lead\n- = lead\n+: Lead %7C None\n %0A%0A    def hasGra\n",
+            "lines": "99"
+        },
+        {
+            "label": "2025-10-27_13-58-42",
+            "content": "@@ -771,16 +771,35 @@\n :float=0\n+, lead: Lead = None\n ):%0A     \n@@ -852,20 +852,20 @@\n _lead = \n-None\n+lead\n %0A%0A    de\n",
+            "lines": "99"
+        },
+        {
+            "label": "2025-10-27_14-00-10",
+            "content": "@@ -768,44 +768,15 @@\n ess:\n- \n float\n- = 0, lead: Lead %7C None = None\n+=0\n ):%0A \n@@ -825,36 +825,36 @@\n   self.__lead = \n-lead\n+None\n %0A%0A    def hasGra\n",
+            "lines": "99"
+        },
+        {
+            "label": "2025-10-27_14-05-53",
+            "content": "class Lead:\n    def __init__(self, thickness:float, hardness:str, size:int):\n        self.__thickness : float = thickness\n        self.__hardness : str = hardness\n        self.__size : int = size\n\n    def usagePerSheet(self):\n        if self.__hardness == \"HB\": return 1\n        if self.__hardness == \"2B\": return 2\n        if self.__hardness == \"4B\": return 4\n        return 6\n    \n    def set_size(self, size):\n        self.__size = size\n\n    def __str__(self):\n        return f\"[{self.__thickness}:{self.__hardness}:{self.__size}]\"\n    \n    def get_thickness(self):\n        return self.__thickness\n    \n    def get_hardeness(self):\n        return self.__hardness\n    \n    def get_size(self):\n        return self.__size\n\n\nclass Pencil:\n    def __init__(self, thickness: float = 0, lead: Lead | None = None):\n        self.__thickness = thickness\n        self.__lead = lead\n\n    def hasGrafite(self):\n        return self.__lead != None\n    \n    def insert(self, lead: Lead):\n        if(self.__thickness != lead.get_thickness()):\n            print(\"fail: calibre incompativel\")\n            return\n        \n        if(self.hasGrafite()):\n            print(\"fail: ja existe grafite\")\n            return\n        \n        self.__lead = lead\n\n    def remove(self):\n        if not self.hasGrafite():\n            print(\"fail: nao existe grafite\")\n            return\n        \n        self.__lead = None\n    \n    def write(self):\n        if not self.hasGrafite():\n            print(\"fail: nao existe grafite\")\n            return\n        \n        if self.__lead.get_size() <= 10:\n            print(\"fail: tamanho insuficiente\")\n            return\n        \n        n = self.__lead.usagePerSheet()\n\n        if self.__lead.get_size() - n <10:\n            print(\"fail: folha incompleta\")\n            self.__lead.set_size(10)\n            return\n        \n        self.__lead.set_size(self.__lead.get_size() - n)\n\n    def __str__(self):\n        return f\"calibre: {self.__thickness}, grafite: {\"null\" if self.__lead == None else self.__lead}\"\n\n\ndef main():\n    pencil = Pencil()\n    while(1):\n        line = input()\n        print(f\"${line}\")\n        args = line.split()\n\n        if args[0]==\"end\":\n            break\n        elif args[0] == \"init\":\n            pencil = Pencil(float(args[1]))\n        elif args[0] == \"show\":\n            print(pencil)\n        elif args[0] == \"insert\":\n            lead = Lead(float(args[1]), str(args[2]), int(args[3]))\n            pencil.insert(lead)\n        elif args[0] == \"remove\":\n            pencil.remove()\n        elif args[0] == \"write\":\n            pencil.write()\n        else:\n            print(\"fail: comando invalido\")\nmain()    ",
+            "lines": "99"
         }
     ]
 }

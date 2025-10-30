@@ -2,11 +2,15 @@ version: '0.2'
 sources:
 - database: database
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
+  type: remote
+  branch: master
   cache_path: /home/ubuntu/Documentos/UFC-is-Fun/Rede POO 2025.2/poo/.tko/cache/database.md
-  cache_timestamp: '2025-10-25 13:17:31'
+  cache_timestamp: '2025-10-30 18:00:26'
   filters: null
 - database: local
   link: ''
+  type: local
+  branch: master
   cache_path: ''
   cache_timestamp: ''
   filters: null
@@ -24,10 +28,12 @@ tasks:
   camisa: '{rate:100, flow:6, edge:5}'
   roupa: '{rate:100, flow:6, edge:5}'
   relogio: '{rate:100, flow:6, edge:5}'
-  notebook: '{rate:100, alone:10}'
   motoca: '{rate:100, alone:10}'
   grafite: '{rate:100, alone:10}'
-  motouber: '{alone:10}'
+  motouber: '{rate:100, alone:10}'
+  notebook: '{rate:100, alone:10}'
+  charger: '{rate:100, alone:10}'
+  tamagotchi: '{rate:100, alone:10}'
 flags:
   quests: 0
   tracks: 0
@@ -35,4 +41,4 @@ flags:
   graph: 0
   xray: 0
 lang: py
-selected: charger
+selected: bloco_b-agregação-simples
