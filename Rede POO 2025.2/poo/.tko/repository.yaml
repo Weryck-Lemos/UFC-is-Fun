@@ -5,7 +5,7 @@ sources:
   type: remote
   branch: master
   cache_path: /home/ubuntu/Documentos/UFC-is-Fun/Rede POO 2025.2/poo/.tko/cache/database.md
-  cache_timestamp: '2025-10-30 18:00:26'
+  cache_timestamp: '2025-11-03 21:15:01'
   filters: null
 - database: local
   link: ''
@@ -17,22 +17,25 @@ sources:
 expanded:
 - campanha-principal
 - configuracao-e-aquecimento
+- bloco_c-listas
 tasks:
-  toalha: '{rate:100, flow:6, edge:5}'
-  animal: '{rate:100, flow:6, edge:5}'
-  carro: '{rate:100, flow:6, edge:5}'
-  calculadora: '{rate:100, flow:6, edge:5}'
-  enxugar: '{rate:100, flow:6, edge:5}'
-  chinela: '{rate:100, flow:6, edge:5}'
-  camisa: '{rate:100, flow:6, edge:5}'
-  roupa: '{rate:100, flow:6, edge:5}'
-  relogio: '{rate:100, flow:6, edge:5}'
+  toalha: '{rate:100, flow:6, edge:5, alone:10}'
+  animal: '{rate:100, flow:6, edge:5, alone:10}'
+  carro: '{rate:100, flow:6, edge:5, alone:10}'
+  calculadora: '{rate:100, flow:6, edge:5, alone:10}'
+  enxugar: '{rate:100, flow:6, edge:5, alone:10}'
+  chinela: '{rate:100, flow:6, edge:5, alone:10}'
+  camisa: '{rate:100, flow:6, edge:5, alone:10}'
+  roupa: '{rate:100, flow:6, edge:5, alone:10}'
+  relogio: '{rate:100, flow:6, edge:5, alone:10}'
   motoca: '{rate:100, alone:10}'
   grafite: '{rate:100, alone:10}'
   motouber: '{rate:100, alone:10}'
   notebook: '{rate:100, alone:10}'
   charger: '{rate:100, alone:10}'
   tamagotchi: '{rate:100, alone:10}'
+  budega: '{rate:100, alone:10}'
+  lapiseira: '{rate:100, alone:10}'
 flags:
   quests: 0
   tracks: 0
@@ -40,4 +43,4 @@ flags:
   graph: 0
   xray: 0
 lang: py
-selected: bloco_b-agregação-simples
+selected: lapiseira

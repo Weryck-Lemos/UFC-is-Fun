@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-03_21-15-04",
+            "content": "@@ -1445,16 +1445,20 @@\n = input(\n+%22$ %22\n )%0A      \n@@ -1469,16 +1469,12 @@\n int(\n-f%22$\n line\n-%22\n )%0A  \n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-11-03_21-15-35",
+            "content": "@@ -1468,14 +1468,12 @@\n (f%22$\n-%7B\n line\n-%7D\n %22)%0A \n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-11-03_21-15-42",
+            "content": "@@ -46,26 +46,24 @@\n        self.\n-__\n nome = nome%0A\n@@ -110,18 +110,16 @@\n rn self.\n-__\n nome%0A%0Acl\n@@ -172,18 +172,16 @@\n    self.\n-__\n qtd = qt\n@@ -187,34 +187,32 @@\n td%0A        self.\n-__\n counters = %5BNone\n@@ -228,26 +228,24 @@\n        self.\n-__\n waiting = %5B%5D\n@@ -298,17 +298,16 @@\n %3C= n\n+ \n %3C self.\n-__\n qtd%0A\n@@ -346,26 +346,24 @@\n        self.\n-__\n waiting.appe\n@@ -417,26 +417,24 @@\n if not self.\n-__\n waiting:%0A   \n@@ -601,34 +601,32 @@\n n%0A%0A        self.\n-__\n counters%5Bindex%5D \n@@ -628,26 +628,24 @@\n dex%5D = self.\n-__\n waiting.pop(\n@@ -791,18 +791,21 @@\n     \n-if\n+atual =\n  self.\n-__\n coun\n@@ -811,24 +811,42 @@\n nters%5Bindex%5D\n+%0A%0A        if atual\n  is None:%0A  \n@@ -911,26 +911,24 @@\n        self.\n-__\n counters%5Bind\n@@ -1018,26 +1018,24 @@\n merate(self.\n-__\n counters):%0A \n@@ -1112,18 +1112,16 @@\n en(self.\n-__\n counters\n@@ -1232,26 +1232,24 @@\n merate(self.\n-__\n waiting):%0A  \n@@ -1299,18 +1299,16 @@\n en(self.\n-__\n waiting)\n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-11-03_21-22-43",
+            "content": "@@ -513,34 +513,32 @@\n         if self.\n-__\n counters%5Bindex%5D \n@@ -2117,16 +2117,46 @@\n lido%22)%0A%0A\n-%0A\n+if __name__ == %22__main__%22:%0A    \n main()%0A\n",
+            "lines": "89"
+        },
+        {
+            "label": "2025-11-03_21-22-59",
+            "content": "class Person:\n    def __init__(self, nome):\n        self.__nome = nome\n    \n    def __str__(self):\n        return self.__nome\n\nclass Market:\n    def __init__(self, qtd):\n        self.__qtd = qtd\n        self.__counters = [None] * qtd\n        self.__waiting = []\n\n    def is_valid(self, n):\n        return 0 <= n< self.__qtd\n\n    def arrive(self, pessoa):\n        self.__waiting.append(pessoa)\n\n    def call(self, index):\n        if not self.__waiting:\n            print(\"fail: sem clientes\")\n            return\n\n        if self.__counters[index] is not None:\n            print(\"fail: caixa ocupado\")\n            return\n\n        self.__counters[index] = self.__waiting.pop(0)\n\n    def finish(self, index):\n        if not self.is_valid(index):\n            print(\"fail: caixa inexistente\")\n            return\n\n        if self.__counters[index] is None:\n            print(\"fail: caixa vazio\")\n            return\n\n        self.__counters[index] = None\n\n    def __str__(self):\n        sb = \"Caixas: [\"\n        for i, p in enumerate(self.__counters):\n            sb += \"-----\" if p is None else str(p)\n            if i < len(self.__counters) - 1:\n                sb += \", \"\n        sb += \"]\\n\"\n\n        sb += \"Espera: [\"\n        for i, p in enumerate(self.__waiting):\n            sb += str(p)\n            if i < len(self.__waiting) - 1:\n                sb += \", \"\n        sb += \"]\"\n\n        return sb\n\ndef main():\n    market = None\n    while True:\n        line = input()\n        print(f\"${line}\")\n        \n        par = line.split(\" \")\n        cmd = par[0]\n\n        if cmd == \"end\":\n            break\n        elif cmd == \"init\":\n            qtd_caixas = int(par[1])\n            market = Market(qtd_caixas)\n        elif cmd == \"show\":\n            print(market)\n        elif cmd == \"arrive\":\n            nome = par[1]\n            pessoa = Person(nome)\n            market.arrive(pessoa)\n        elif cmd == \"call\":\n            indice = int(par[1])\n            market.call(indice)\n        elif cmd == \"finish\":\n            indice = int(par[1])\n            market.finish(indice)\n        else:\n            print(\"fail: comando invalido\")\n\n\nmain()\n",
+            "lines": "89"
+        }
+    ]
+}

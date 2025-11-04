@@ -1,0 +1,62 @@
+2025-11-03 18:34:12, MOVE, v:1, k:chinela, mode:PICK
+2025-11-03 18:34:13, EXEC, v:1, k:chinela, mode:LOCK, rate:0
+2025-11-03 18:34:15, EXEC, v:1, k:chinela, mode:LOCK, rate:0
+2025-11-03 18:34:16, EXEC, v:1, k:chinela, mode:FREE
+2025-11-03 18:34:25, MOVE, v:1, k:chinela, mode:BACK
+2025-11-03 18:34:36, MOVE, v:1, k:chinela, mode:PICK
+2025-11-03 18:34:36, EXEC, v:1, k:chinela, mode:FREE
+2025-11-03 18:34:46, MOVE, v:1, k:chinela, mode:BACK
+2025-11-03 18:34:50, SELF, v:1, k:chinela, rate:100, flow:6, edge:5, alone:10
+2025-11-03 18:34:54, SELF, v:1, k:camisa, rate:100, flow:6, edge:5, alone:10
+2025-11-03 18:34:58, SELF, v:1, k:roupa, rate:100, flow:6, edge:5, alone:10
+2025-11-03 18:35:01, SELF, v:1, k:relogio, rate:100, flow:6, edge:5, alone:10
+2025-11-03 18:35:12, SELF, v:1, k:toalha, rate:100, flow:6, edge:5, alone:10
+2025-11-03 18:35:16, SELF, v:1, k:animal, rate:100, flow:6, edge:5, alone:10
+2025-11-03 18:35:16, MOVE, v:1, k:carro, mode:PICK
+2025-11-03 18:35:17, MOVE, v:1, k:carro, mode:BACK
+2025-11-03 18:35:18, MOVE, v:1, k:carro, mode:PICK
+2025-11-03 18:35:18, EXEC, v:1, k:carro, mode:FULL, rate:100
+2025-11-03 18:35:18, MOVE, v:1, k:carro, mode:BACK
+2025-11-03 18:35:21, SELF, v:1, k:carro, rate:100, flow:6, edge:5, alone:10
+2025-11-03 18:35:22, MOVE, v:1, k:calculadora, mode:PICK
+2025-11-03 18:35:23, MOVE, v:1, k:calculadora, mode:BACK
+2025-11-03 18:35:25, MOVE, v:1, k:calculadora, mode:PICK
+2025-11-03 18:35:25, MOVE, v:1, k:calculadora, mode:BACK
+2025-11-03 18:35:29, SELF, v:1, k:calculadora, rate:100, flow:6, edge:5, alone:10
+2025-11-03 18:35:32, SELF, v:1, k:enxugar, rate:100, flow:6, edge:5, alone:10
+2025-11-03 18:35:42, MOVE, v:1, k:array, mode:DOWN
+2025-11-03 18:35:42, MOVE, v:1, k:array, mode:DOWN
+2025-11-03 18:35:53, MOVE, v:1, k:budega, mode:DOWN
+2025-11-03 21:15:03, MOVE, v:1, k:budega, mode:PICK
+2025-11-03 21:15:04, EXEC, v:1, k:budega, mode:FULL, rate:0, size:91
+2025-11-03 21:15:35, EXEC, v:1, k:budega, mode:FULL, rate:0, size:91
+2025-11-03 21:15:42, EXEC, v:1, k:budega, mode:FULL, rate:100, size:91
+2025-11-03 21:22:43, EXEC, v:1, k:budega, mode:FULL, rate:20, size:89
+2025-11-03 21:22:59, EXEC, v:1, k:budega, mode:FULL, rate:100, size:89
+2025-11-03 21:23:11, MOVE, v:1, k:budega, mode:BACK
+2025-11-03 21:23:15, SELF, v:1, k:budega, rate:100, alone:10
+2025-11-03 21:23:19, MOVE, v:1, k:lapiseira, mode:DOWN
+2025-11-03 21:23:19, MOVE, v:1, k:lapiseira, mode:DOWN
+2025-11-03 21:31:56, MOVE, v:1, k:lapiseira, mode:PICK
+2025-11-03 21:31:57, EXEC, v:1, k:lapiseira, mode:FULL, rate:0, size:115
+2025-11-03 21:36:37, EXEC, v:1, k:lapiseira, mode:FULL, rate:0, size:123
+2025-11-03 21:37:41, EXEC, v:1, k:lapiseira, mode:FULL, rate:0, size:123
+2025-11-03 21:38:22, EXEC, v:1, k:lapiseira, mode:FULL, rate:0, size:124
+2025-11-03 21:38:48, EXEC, v:1, k:lapiseira, mode:FULL, rate:14, size:124
+2025-11-03 21:39:12, EXEC, v:1, k:lapiseira, mode:FULL, rate:14, size:124
+2025-11-03 21:40:02, EXEC, v:1, k:lapiseira, mode:FULL, rate:14, size:124
+2025-11-03 21:40:21, EXEC, v:1, k:lapiseira, mode:FULL, rate:28, size:122
+2025-11-03 21:41:14, EXEC, v:1, k:lapiseira, mode:FULL, rate:35, size:122
+2025-11-03 21:41:56, EXEC, v:1, k:lapiseira, mode:FULL, rate:35, size:123
+2025-11-03 21:47:20, EXEC, v:1, k:lapiseira, mode:FULL, rate:35, size:122
+2025-11-03 21:48:55, EXEC, v:1, k:lapiseira, mode:FULL, rate:0, size:67
+2025-11-03 21:49:15, EXEC, v:1, k:lapiseira, mode:FULL, rate:14, size:124
+2025-11-03 21:49:24, MOVE, v:1, k:lapiseira, mode:BACK
+2025-11-03 21:49:30, MOVE, v:1, k:lapiseira, mode:PICK
+2025-11-03 21:50:10, EXEC, v:1, k:lapiseira, mode:FULL, rate:35, size:123
+2025-11-03 21:50:28, EXEC, v:1, k:lapiseira, mode:FULL, rate:7, size:123
+2025-11-03 21:51:14, EXEC, v:1, k:lapiseira, mode:FULL, rate:7, size:123
+2025-11-03 21:51:25, EXEC, v:1, k:lapiseira, mode:FULL, rate:57, size:123
+2025-11-03 21:51:54, EXEC, v:1, k:lapiseira, mode:FULL, rate:100, size:123
+2025-11-03 21:51:55, MOVE, v:1, k:lapiseira, mode:BACK
+2025-11-03 21:51:59, SELF, v:1, k:lapiseira, rate:100, alone:10
