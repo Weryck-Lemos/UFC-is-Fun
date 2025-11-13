@@ -1,0 +1,37 @@
+Livro Comilão
+Você vai gerenciar um objeto da classe LivroMagico que pode ser lido por Leitores em uma biblioteca amaldiçoada.
+Atributos do Leitor:
+nome: str (nome do leitor)
+magia: int = 0 (quantidade de magia do leitor)
+Métodos do Leitor:
+__init__(self, nome: str, magia: int) – Inicializa o leitor com nome e magia.
+get_nome(self) – Retorna o nome do leitor.
+get_magia(self) – Retorna a quantidade de magia do leitor.
+ganhar_magia(self, qtd: int) – Aumenta a quantidade de magia do leitor.
+Atributos do Livro Mágico:
+energia: int (energia do livro)
+leitor: Leitor | None (o leitor atual, se houver)
+capitulos_lidos: int (número de capítulos lidos)
+sair: str (texto)
+Métodos do Livro Mágico:
+__init__(self, energia: int) – Inicializa o livro com uma quantidade de energia.
+entrar(self, leitor: Leitor) – Tenta adicionar um novo leitor. Retorna True se o leitor conseguiu entrar, False se já há alguém lendo.
+ler_capitulos(self, numero: int) – Lê um número específico de capítulos. Cada capítulo lido consome energia do livro e aumenta a magia do leitor.
+__str__(self) – Retorna uma representação do estado do livro.
+Contratos dos Métodos do Livro Mágico:
+entrar(leitor): Se já houver um leitor, o método falha e retorna False. Caso contrário, o leitor entra e o método retorna True.
+ler_capitulos(numero): O método recebe um inteiro indicando quantos capítulos serão lidos. Só funciona se houver um leitor. Cada capítulo lido faz o livro perder 2 pontos de energia (não podendo ficar menor que 1) e o leitor ganhar 5 pontos de magia. Se tentar ler sem um leitor, o livro retorna a mensagem: "fail: ninguém está lendo o livro".
+sair(): Como o livro é amaldiçoado, não é possível retirar o leitor através do método sair. Retorna a mensagem "fail: impossível parar de ler".
+
+Regras de Leitura:
+O leitor começa com magia 0 e sua magia aumenta conforme ele lê capítulos.
+Enquanto o leitor estiver lendo: cada capítulo lido faz o livro perder 2 pontos de energia (não podendo ficar menor que 1), e o leitor ganha 5 pontos de magia.
+Se o livro ficar com 1 de energia, ele suga toda a magia do leitor e imprime: "Leitor {nome} foi engolido pelo livro". Após isso, o atributo leitor é esvaziado e o número de capítulos lidos volta a ser 0.
+Se outro leitor tentar começar a ler enquanto o livro já está sendo lido, o método retorna: "fail: livro já está sendo lido".
+O leitor não consegue parar de ler enquanto o livro não estiver com 1 de energia.
+Formato de Saída do Livro:
+O livro deve informar seu estado e quem está lendo no método __str__() com o formato:
+"Magia do Livro: <energia>, Lendo: <nome ou "ninguém">, Magia do Leitor: <magia_leitor>"
+Exemplo: "Magia do Livro: 6, Lendo: Alice, Magia do Leitor: 4"
+
+

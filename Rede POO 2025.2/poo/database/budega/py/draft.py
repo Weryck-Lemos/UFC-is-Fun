@@ -1,89 +1,65 @@
-class Person:
-    def __init__(self, nome):
-        self.__nome = nome
-    
-    def __str__(self):
+class Cliente:
+    def init(self, nome: str):
+        self.nome = nome
+
+    def getNome(self):
         return self.__nome
 
+    def __str__(self):
+        return f"{self.nome}"
+
+
 class Market:
-    def __init__(self, qtd):
-        self.__qtd = qtd
-        self.__counters = [None] * qtd
-        self.__waiting = []
+    def __init__(self, caixas: int):
+        self.espera: list[Cliente] = []
+        self.caixas: list[Cliente | None] = [None for _ in range(caixas)]
 
-    def is_valid(self, n):
-        return 0 <= n< self.__qtd
+    def __str__(self):
+        caixas = ", ".join([str(x) if x else "-----" for x in self.caixas])
+        espera = ", ".join(str(x) for x in self.espera)
+        return f"Caixas: [{caixas}]\nEspera: [{espera}]"
 
-    def arrive(self, pessoa):
-        self.__waiting.append(pessoa)
+    def chegar(self, cliente: Cliente):
+        self.espera.append(cliente)
 
-    def call(self, index):
-        if not self.__waiting:
-            print("fail: sem clientes")
+    def call(self, index: int):
+        if self.espera == []:
+            print("fail: sem clinetes")
             return
-
-        if self.__counters[index] is not None:
+        if self.caixas[index] is not None:
             print("fail: caixa ocupado")
             return
+        self.caixas[index] = self.espera[0]
 
-        self.__counters[index] = self.__waiting.pop(0)
-
-    def finish(self, index):
-        if not self.is_valid(index):
+    def finish(self, index: int) -> Cliente | None:
+        if self.caixas[index] is None:
             print("fail: caixa inexistente")
             return
-
-        if self.__counters[index] is None:
+        if index < 0 or index >= len(self.caixas):
             print("fail: caixa vazio")
             return
 
-        self.__counters[index] = None
+        aux = self.caixas[index]
+        self.caixas[index] = None
+        return aux
 
-    def __str__(self):
-        sb = "Caixas: ["
-        for i, p in enumerate(self.__counters):
-            sb += "-----" if p is None else str(p)
-            if i < len(self.__counters) - 1:
-                sb += ", "
-        sb += "]\n"
-
-        sb += "Espera: ["
-        for i, p in enumerate(self.__waiting):
-            sb += str(p)
-            if i < len(self.__waiting) - 1:
-                sb += ", "
-        sb += "]"
-
-        return sb
 
 def main():
-    market = None
-    while True:
-        line = input()
-        print(f"${line}")
-        
-        par = line.split(" ")
-        cmd = par[0]
+    mercado = None
 
-        if cmd == "end":
+    while True:
+
+        line = input()
+        print("$" + line)
+        args = line.split(" ")
+
+        if args[0] == "end":
             break
-        elif cmd == "init":
-            qtd_caixas = int(par[1])
-            market = Market(qtd_caixas)
-        elif cmd == "show":
-            print(market)
-        elif cmd == "arrive":
-            nome = par[1]
-            pessoa = Person(nome)
-            market.arrive(pessoa)
-        elif cmd == "call":
-            indice = int(par[1])
-            market.call(indice)
-        elif cmd == "finish":
-            indice = int(par[1])
-            market.finish(indice)
-        else:
-            print("fail: comando invalido")
+        elif args[0] == "show":
+            print(mercado)
+        elif args[0] =="init":
+            p = int(args[1])
+            mercado = Market(p)
 
 
 main()

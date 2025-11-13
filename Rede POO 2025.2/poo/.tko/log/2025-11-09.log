@@ -1,0 +1,5 @@
+2025-11-09 12:00:41, MOVE, v:1, k:budega, mode:PICK
+2025-11-09 12:00:42, EXEC, v:1, k:budega, mode:FULL, rate:0, size:65
+2025-11-09 12:00:58, EXEC, v:1, k:budega, mode:FULL, rate:10, size:65
+2025-11-09 12:01:54, EXEC, v:1, k:budega, mode:FULL, rate:100, size:89
+2025-11-09 12:02:12, EXEC, v:1, k:budega, mode:FULL, rate:10, size:65

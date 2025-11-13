@@ -5,7 +5,7 @@ sources:
   type: remote
   branch: master
   cache_path: /home/ubuntu/Documentos/UFC-is-Fun/Rede POO 2025.2/poo/.tko/cache/database.md
-  cache_timestamp: '2025-11-03 21:15:01'
+  cache_timestamp: '2025-11-13 15:28:39'
   filters: null
 - database: local
   link: ''
@@ -18,6 +18,8 @@ expanded:
 - campanha-principal
 - configuracao-e-aquecimento
 - bloco_c-listas
+- bloco_d-crud-com-mapas-e-enumerações
+- bloco_f-herança-i
 tasks:
   toalha: '{rate:100, flow:6, edge:5, alone:10}'
   animal: '{rate:100, flow:6, edge:5, alone:10}'
@@ -34,8 +36,11 @@ tasks:
   notebook: '{rate:100, alone:10}'
   charger: '{rate:100, alone:10}'
   tamagotchi: '{rate:100, alone:10}'
+  array: '{rate:100, alone:10}'
   budega: '{rate:100, alone:10}'
   lapiseira: '{rate:100, alone:10}'
+  pula-pula: '{rate:100, alone:10}'
+  cinema: '{rate:100, alone:10}'
 flags:
   quests: 0
   tracks: 0
@@ -43,4 +48,4 @@ flags:
   graph: 0
   xray: 0
 lang: py
-selected: lapiseira
+selected: tabuleiro

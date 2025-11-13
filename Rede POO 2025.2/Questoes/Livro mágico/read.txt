@@ -1,0 +1,40 @@
+Livro Mágico
+
+Você vai gerenciar um objeto da classe LivroMagico que pode ser lido por Leitores em uma biblioteca encantada.
+
+Atributos mínimos do Leitor: nome:str, magia:int
+
+Métodos do Leitor: init(nome, magia), get_nome(), get_magia(), ganhar_magia(qtd), gastar_magia(qtd), str()
+
+Atributos mínimos do LivroMagico: energia:int, leitor:Leitor|None, capitulos_lidos:int
+
+
+Métodos do Livro Mágico: init(energia), entrar(leitor), ler_capitulo(int), sair(), str().
+
+
+Contratos dos métodos do LivroMagico:
+
+– entrar(leitor) deve falhar se já houver leitor. Retorna True em sucesso e False em falha.
+– ler_capitulo(number) só funciona se houver leitor e energia>0. Retorna True em sucesso e False em falha.
+– sair() remove o leitor atual. Retorna o Leitor que estava lendo ou None se não houver.
+
+A leitura começa apenas se o leitor tiver pelo menos 5 pontos de magia. Se não tiver, deve aparecer: fail: magia insuficiente para ler
+Quando o leitor começa a ler: ele gasta 5 pontos de magia.
+
+Enquanto o leitor estiver lendo: cada capítulo lido faz o livro perder 2 pontos de energia e o leitor ganhar 1 ponto de magia. Esse comportamento deve ocorrer no método ler_capitulo(). Se tentar ler capítulo sem ninguém lendo, deve aparecer: fail: ninguém está lendo o livro
+
+Se o livro ficar sem energia, ele se fecha sozinho e o leitor deve sair. Quando isso acontecer, deve aparecer: fail: O livro ficou sem energia e se fechou sozinho!
+
+Se outro leitor tentar começar a ler enquanto já tem alguém lendo, deve aparecer: fail: livro já está sendo lido
+
+Quando o leitor parar de ler (manualmente ou automaticamente), deve aparecer:
+<nome> terminou de ler. Capítulos lidos: X
+
+O leitor pode parar de ler usando o método sair(), e mantém toda magia adquirida.
+
+O livro deve informar seu estado e quem está lendo no método str(), com o formato:
+LivroMagico energia:<valor>, lendo:<nome ou "ninguém">
+
+Ex:
+ LivroMagico energia:6, lendo:ninguém
+LivroMagico energia:4, lendo:Alice

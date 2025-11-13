@@ -1,0 +1,32 @@
+2025-11-13 09:28:46, MOVE, v:1, k:array, mode:PICK
+2025-11-13 09:28:47, EXEC, v:1, k:array, mode:FREE, size:2
+2025-11-13 14:11:25, SELF, v:1, k:array, rate:100, alone:10
+2025-11-13 14:11:30, MOVE, v:1, k:cinema, mode:DOWN
+2025-11-13 14:11:30, MOVE, v:1, k:cinema, mode:DOWN
+2025-11-13 15:28:42, MOVE, v:1, k:cinema, mode:PICK
+2025-11-13 15:28:43, EXEC, v:1, k:cinema, mode:FULL, rate:0, size:62
+2025-11-13 15:30:39, EXEC, v:1, k:cinema, mode:FULL, rate:0, size:62
+2025-11-13 15:32:30, EXEC, v:1, k:cinema, mode:FULL, rate:0, size:65
+2025-11-13 15:35:23, EXEC, v:1, k:cinema, mode:FULL, rate:0, size:65
+2025-11-13 15:36:45, EXEC, v:1, k:cinema, mode:FULL, rate:0, size:65
+2025-11-13 15:37:13, EXEC, v:1, k:cinema, mode:FULL, rate:0, size:65
+2025-11-13 15:40:15, EXEC, v:1, k:cinema, mode:FULL, rate:0, size:67
+2025-11-13 15:41:00, EXEC, v:1, k:cinema, mode:FULL, rate:0, size:67
+2025-11-13 15:41:15, EXEC, v:1, k:cinema, mode:FULL, rate:11, size:67
+2025-11-13 15:41:22, MOVE, v:1, k:cinema, mode:BACK
+2025-11-13 15:41:39, MOVE, v:1, k:cinema, mode:PICK
+2025-11-13 15:41:39, EXEC, v:1, k:cinema, mode:FULL, rate:33, size:67
+2025-11-13 15:45:34, EXEC, v:1, k:cinema, mode:FULL, rate:33, size:69
+2025-11-13 15:45:57, EXEC, v:1, k:cinema, mode:FULL, rate:44, size:69
+2025-11-13 15:49:17, MOVE, v:1, k:cinema, mode:BACK
+2025-11-13 16:00:15, MOVE, v:1, k:cinema, mode:PICK
+2025-11-13 16:00:16, EXEC, v:1, k:cinema, mode:FULL, rate:66, size:74
+2025-11-13 16:03:37, EXEC, v:1, k:cinema, mode:FULL, rate:77, size:83
+2025-11-13 16:03:54, EXEC, v:1, k:cinema, mode:FULL, rate:77, size:84
+2025-11-13 16:04:33, EXEC, v:1, k:cinema, mode:FULL, rate:77, size:88
+2025-11-13 16:07:24, EXEC, v:1, k:cinema, mode:FULL, rate:77, size:88
+2025-11-13 16:07:38, EXEC, v:1, k:cinema, mode:FULL, rate:77, size:87
+2025-11-13 16:10:08, EXEC, v:1, k:cinema, mode:FULL, rate:100, size:88
+2025-11-13 16:10:09, MOVE, v:1, k:cinema, mode:BACK
+2025-11-13 16:10:15, SELF, v:1, k:cinema, rate:100, alone:10
+2025-11-13 16:10:41, MOVE, v:1, k:tabuleiro, mode:DOWN

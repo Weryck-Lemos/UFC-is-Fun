@@ -1,0 +1,89 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-11_21-22-50",
+            "content": "@@ -1216,20 +1216,20 @@\n urn f%22%5B%7B\n-wait\n+play\n ing_str%7D\n@@ -1235,20 +1235,20 @@\n %7D%5D =%3E %5B%7B\n-play\n+wait\n ing_str%7D\n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-11_21-23-25",
+            "content": "@@ -599,21 +599,18 @@\n ing.\n-insert\n+append\n (kid\n-, 0\n )%0A%0A \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-11_21-23-56",
+            "content": "@@ -606,14 +606,14 @@\n ert(\n-0, \n kid\n+, 0\n )%0A%0A \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-11_21-24-18",
+            "content": "@@ -757,37 +757,17 @@\n waiting%5B\n-len(self.__waiting)-1\n+0\n %5D)%0A     \n@@ -792,29 +792,9 @@\n pop(\n-len(self.__waiting)-1\n+0\n )%0A%0A \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-11_21-25-01",
+            "content": "@@ -735,25 +735,23 @@\n playing.\n-insert(0,\n+append(\n self.__w\n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-11_21-27-46",
+            "content": "@@ -1722,19 +1722,20 @@\n %5B0%5D == %22\n-lea\n+remo\n ve%22:%0A   \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-11_21-27-57",
+            "content": "@@ -1753,19 +1753,20 @@\n mpoline.\n-lea\n+remo\n ve(args%5B\n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-11_21-28-25",
+            "content": "@@ -1759,16 +1759,23 @@\n e.leave(\n+args%5B1%5D\n )%0A      \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-11_21-29-02",
+            "content": "@@ -877,128 +877,224 @@\n     \n-self.__waiting.insert(0, self.__playing%5Blen(self.__playing)%5D)%0A        self.__playing.pop(len(self.__playing)-1)%0A        \n+for i, kid in enumerate(self.__playing):%0A            if kid.getName() == name:%0A                self.__playing.pop(i)%0A                return%0A            %0A        raise Exception (f%22fail: %7Bname%7D nao esta no pula-pula%22)\n %0A%0A  \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-11_21-31-25",
+            "content": "@@ -848,24 +848,34 @@\n f leave(self\n+, name:str\n ):%0A        s\n@@ -985,16 +985,24 @@\n ing)-1)%0A\n+        \n %0A%0A    de\n",
+            "lines": "67"
+        },
+        {
+            "label": "2025-11-11_21-31-37",
+            "content": "@@ -918,26 +918,24 @@\n f.__playing)\n--1\n %5D)%0A        s\n",
+            "lines": "67"
+        },
+        {
+            "label": "2025-11-11_21-32-00",
+            "content": "@@ -838,270 +838,8 @@\n 1)%0A%0A\n-    def remove(self, name:str):%0A        for i, kid in enumerate(self.__playing):%0A            if kid.getName() == name:%0A                self.__playing.pop(i)%0A                return%0A            %0A        raise Exception (f%22fail: %7Bname%7D nao esta no pula-pula%22)%0A    %0A\n     \n@@ -847,32 +847,32 @@\n ef leave(self):%0A\n+\n         self.__w\n@@ -919,32 +919,32 @@\n .__playing)-1%5D)%0A\n-\n         self.__p\n@@ -970,32 +970,33 @@\n .__playing)-1)%0A%0A\n+%0A\n     def __str__(\n@@ -1653,81 +1653,8 @@\n e()%0A\n-        elif args%5B0%5D == %22remove%22:%0A            trampoline.remove(args%5B1%5D)%0A\n     \n",
+            "lines": "67"
+        },
+        {
+            "label": "2025-11-11_21-33-06",
+            "content": "@@ -901,28 +901,28 @@\n rate(self.__\n-wait\n+play\n ing):%0A      \n@@ -968,36 +968,36 @@\n          self.__\n-wait\n+play\n ing.pop(i)%0A     \n",
+            "lines": "76"
+        },
+        {
+            "label": "2025-11-11_21-34-36",
+            "content": "@@ -901,28 +901,28 @@\n rate(self.__\n-play\n+wait\n ing):%0A      \n@@ -968,36 +968,36 @@\n          self.__\n-play\n+wait\n ing.pop(i)%0A     \n@@ -1035,21 +1035,32 @@\n         \n-print\n+raise Exception \n (f%22fail:\n",
+            "lines": "76"
+        },
+        {
+            "label": "2025-11-11_21-35-26",
+            "content": "@@ -1018,156 +1018,8 @@\n urn%0A\n-        for i, kid in enumerate(self.__waiting):%0A            if kid.getName() == name:%0A                self.__waiting.pop(i)%0A                return%0A\n     \n",
+            "lines": "76"
+        },
+        {
+            "label": "2025-11-11_21-36-27",
+            "content": "@@ -1258,58 +1258,8 @@\n f):%0A\n-        if not self.__playing:%0A            return%0A\n     \n",
+            "lines": "80"
+        },
+        {
+            "label": "2025-11-11_21-37-01",
+            "content": "class Kid:\n    def __init__(self, name:str, age:int):\n        self.__name = name\n        self.__age = age\n\n    def getAge(self):\n        return self.__age\n    \n    def getName(self):\n        return self.__name\n    \n    def setAge(self, age: int):\n        self.__age = age\n\n    def setName(self, name: str):\n        self.__name = name\n\n    def __str__(self):\n        return f\"{self.__name}:{self.__age}\"\n    \n\nclass Trampoline:\n    def __init__(self):\n        self.__playing = []\n        self.__waiting = []\n\n    def arrive(self, name: str, age:int):\n        kid = Kid(name, age)\n        self.__waiting.insert(0, kid)\n\n    def enter(self):\n        if not self.__waiting:\n            raise Exception (\"fail: fila vazia\")\n        self.__playing.insert(0,self.__waiting[len(self.__waiting)-1])\n        self.__waiting.pop(len(self.__waiting)-1)\n\n    def remove(self, name:str):\n        for i, kid in enumerate(self.__playing):\n            if kid.getName() == name:\n                self.__playing.pop(i)\n                return\n        for i, kid in enumerate(self.__waiting):\n            if kid.getName() == name:\n                self.__waiting.pop(i)\n                return\n            \n        print(f\"fail: {name} nao esta no pula-pula\")\n    \n    def leave(self):\n        if not self.__playing:\n            return\n        self.__waiting.insert(0, self.__playing[len(self.__playing)-1])\n        self.__playing.pop(len(self.__playing)-1)\n\n    def __str__(self):\n        playing_str = \", \".join(str(k) for k in self.__playing)\n        waiting_str = \", \".join(str(k) for k in self.__waiting)\n        return f\"[{waiting_str}] => [{playing_str}]\"\n    \ndef main():\n    trampoline = Trampoline()\n\n    while True:\n        line = input()\n        print(f\"${line}\")\n        args = line.split()\n\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(trampoline)\n        elif args[0] == \"arrive\":\n            trampoline.arrive(args[1], int(args[2]))\n        elif args[0] == \"enter\":\n            trampoline.enter()\n        elif args[0] == \"leave\":\n            trampoline.leave()\n        elif args[0] == \"remove\":\n            trampoline.remove(args[1])\n        else:\n            print(\"fail: comando invalido\")\nmain()    ",
+            "lines": "82"
+        }
+    ]
+}
