@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-19_08-18-19",
+            "content": "@@ -551,162 +551,8 @@\n me%0A%0A\n-    def __str__(self):%0A        flag = %22@%22 if self.__favorited else %22-%22%0A        return f%22flag %7Bself.__name%7D %22+ %22 ,%22.join(str(c) for c in self.__List)    %0A%0A\n     \n@@ -1341,67 +1341,8 @@\n %5D))%0A\n-        elif args%5B0%5D == %22show%22:%0A            print(contact)%0A\n     \n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-11-19_08-24-31",
+            "content": "@@ -630,22 +630,21 @@\n     \n-ans =\n+return\n  f%22\n-%7B\n flag\n-%7D\n  %7Bse\n@@ -700,27 +700,8 @@\n st) \n-%0A        return ans\n    %0A\n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-11-19_08-24-58",
+            "content": "@@ -622,30 +622,29 @@\n %22-%22%0A        \n-return\n+ans =\n  f%22%7Bflag%7D %7Bs\n@@ -659,13 +659,13 @@\n me%7D \n-%5B\n %22+ %22\n+ \n ,%22.j\n@@ -701,12 +701,27 @@\n st) \n-+%22%5D%22\n+%0A        return ans\n    %0A\n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-11-19_08-26-39",
+            "content": "@@ -662,17 +662,16 @@\n %7D %5B%22+ %22,\n- \n %22.join(s\n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-11-19_08-26-46",
+            "content": "@@ -1028,19 +1028,22 @@\n List\n-.pop(index)\n+%5Bindex%5D = None\n %0A   \n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-11-19_08-27-03",
+            "content": "@@ -743,32 +743,49 @@\n r, number:str):%0A\n+        try:%0A    \n         fone = F\n@@ -808,16 +808,20 @@\n         \n+    \n if fone.\n@@ -827,24 +827,28 @@\n .isValid():%0A\n+    \n             \n@@ -888,15 +888,39 @@\n     \n+    \n return%0A\n+        except:%0A    \n     \n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-11-19_08-29-12",
+            "content": "@@ -1051,92 +1051,8 @@\n %22)%0A%0A\n-    def tfav(self):%0A        self.__favorited = True if self.__favorited else False%0A%0A\n def \n@@ -1509,119 +1509,8 @@\n ct)%0A\n-        elif args%5B0%5D == %22tfav%22:%0A            contact.tfav()%0A        else:%0A            print(%22comando invalido%22)%0A\n     \n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-11-19_08-30-32",
+            "content": "@@ -1094,20 +1094,19 @@\n rited = \n-Fals\n+Tru\n e if sel\n@@ -1124,19 +1124,20 @@\n ed else \n-Tru\n+Fals\n e%0A%0Adef m\n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-11-19_08-31-32",
+            "content": "class Fone:\n    def __init__(self, id:str, number:str):\n        self.__id = id\n        self.__number = number\n\n    def isValid(self):\n        permitidos = \"0123456789().\"\n        return all(c in permitidos for c in self.__number)\n    \n    def getId(self):\n        return self.__id\n    \n    def getNumber(self):\n        return self.__number\n    \n    def __str__(self):\n        return f\"{self.__id}:{self.__number}\"\n    \nclass Contact:\n    def __init__(self, name:str):\n        self.__favorited = False\n        self.__List = []\n        self.__name = name\n\n    def __str__(self):\n        flag = \"@\" if self.__favorited else \"-\"\n        return f\"{flag} {self.__name} [\"+ \", \".join(str(c) for c in self.__List) +\"]\"   \n\n    def addFone(self, id:str, number:str):\n        fone = Fone(id, number)\n        if fone.isValid():\n            self.__List.append(fone)\n            return\n        print(\"fail: invalid number\")\n\n    def rmFone(self, index: int):\n        try:\n            self.__List.pop(index)\n        except:\n            print(\"fail, indice invalido\")\n\n    def tfav(self):\n        self.__favorited = False if self.__favorited else True\n\ndef main():\n    contact = Contact(\"\")\n\n    while True:\n        line = input()\n        print(f\"${line}\")\n        args = line.split()\n\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"init\":\n            contact = Contact(args[1])\n        elif args[0] == \"add\":\n            contact.addFone(args[1], args[2])\n        elif args[0] == \"rm\":\n            contact.rmFone(int(args[1]))\n        elif args[0] == \"show\":\n            print(contact)\n        elif args[0] == \"tfav\":\n            contact.tfav()\n        else:\n            print(\"comando invalido\")\n    \nmain()\n",
+            "lines": "68"
+        }
+    ]
+}
