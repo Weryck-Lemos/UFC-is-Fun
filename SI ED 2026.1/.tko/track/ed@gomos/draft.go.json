@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_20-14-22",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar q int\n\tvar d string\n\tfmt.Scan(&q, &d)\n\n\tx := make([]int, q)\n\ty := make([]int, q)\n\n\tfor i := 0; i < q; i++ {\n\t\tfmt.Scan(&x[i], &y[i])\n\t}\n\n\tfor i := q - 1; i > 0; i-- {\n\t\tx[i] = x[i-1]\n\t\ty[i] = y[i-1]\n\t}\n\n\tif d==\"L\" {\n\t\tx[0]--\n\t} else if d ==\"R\" {\n\t\tx[0]++\n\t} else if d ==\"U\" {\n\t\ty[0]--\n\t} else if d ==\"D\" {\n\t\ty[0]++\n\t}\n\n\n\tfor i := 0; i < q; i++ {\n\t\tfmt.Printf(\"%d %d\\n\", x[i], y[i])\n\t}\n}",
+            "lines": "36"
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_19-32-18",
+            "content": "@@ -49,23 +49,17 @@\n id ,\n-ans,\n  dist \n-:=100\n+=-1\n  int\n@@ -198,41 +198,55 @@\n     \n-dif := x-y%0A            if dif %3C0%7B\n+if(dist == -1)%7B%0A                dist = abs(x,y)\n %0A   \n@@ -258,19 +258,14 @@\n     \n-    dif*=-1\n+%7Delse%7B\n %0A   \n@@ -277,35 +277,68 @@\n     \n-%7D%0A%0A            if dif%3Cdist%7B\n+    if(dist %3E abs(x,y))%7B%0A                    dist = abs(x,y)\n %0A   \n@@ -354,12 +354,9 @@\n     \n-id=i\n+%7D\n %0A   \n@@ -404,14 +404,16 @@\n f(%22%25d%22, \n-i\n d\n+ist\n )%0A%7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-16_19-35-21",
+            "content": "@@ -53,17 +53,8 @@\n ans,\n-  int%0A   \n  dis\n@@ -60,16 +60,21 @@\n st :=100\n+ int%0A\n %0A    fmt\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-16_19-35-42",
+            "content": "@@ -69,20 +69,16 @@\n st :=100\n- int\n %0A    fmt\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-16_19-35-50",
+            "content": "@@ -59,20 +59,16 @@\n int%0A    \n-var \n dist :=1\n@@ -69,16 +69,20 @@\n st :=100\n+ int\n %0A    fmt\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-16_19-35-56",
+            "content": "@@ -48,16 +48,17 @@\n  id ,ans\n+,\n   int%0A  \n@@ -59,16 +59,20 @@\n int%0A    \n+var \n dist :=1\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-16_19-36-15",
+            "content": "@@ -317,19 +317,18 @@\n         \n-ans\n+id\n =i%0A     \n@@ -374,15 +374,14 @@\n f(%22%25d%22, \n-ans\n+id\n )%0A%7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-16_19-36-30",
+            "content": "@@ -357,73 +357,9 @@\n   %7D%0A\n-    if !ans%7B%0A        fmt.Printf(%22sem ganhador%5Cn%22)%0A    %7Delse%7B%0A    \n+%0A\n     \n@@ -376,24 +376,14 @@\n (%22%25d\n-%5Cn\n %22, ans\n-+1)%0A    %7D\n+)\n %0A%7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-16_19-37-40",
+            "content": "@@ -364,16 +364,12 @@\n  if \n+!\n ans\n- == 0\n %7B%0A  \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-03-16_19-37-49",
+            "content": "@@ -327,35 +327,8 @@\n s=i%0A\n-                dist = dif%0A\n     \n@@ -448,16 +448,18 @@\n %5Cn%22, ans\n++1\n )%0A    %7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-03-16_19-38-17",
+            "content": "@@ -294,17 +294,17 @@\n   if dif\n-%3E\n+%3C\n dist%7B%0A  \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-16_19-38-43",
+            "content": "@@ -44,16 +44,21 @@\n  var id \n+,ans \n  int%0A   \n@@ -72,17 +72,8 @@\n =100\n-, asn:=-1\n %0A   \n@@ -104,13 +104,14 @@\n  i:=\n-0\n+1\n ; i%3C\n+=\n id; \n@@ -294,17 +294,17 @@\n   if dif\n-%3C\n+%3E\n dist%7B%0A  \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-16_19-40-37",
+            "content": "@@ -67,16 +67,13 @@\n =100\n-%0A    ans\n+, asn\n :=-1\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-16_19-40-46",
+            "content": "@@ -400,18 +400,17 @@\n  ans == \n--1\n+0\n %7B%0A      \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-03-16_19-40-54",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var id  int\n    dist :=100\n    ans:=-1\n    fmt.Scan(&id)\n\n\n    for i:=0; i<id; i++{\n        var x, y int\n        fmt.Scan(&x, &y)\n\n        if (x>=10 && y>=10){\n            dif := x-y\n            if dif <0{\n                dif*=-1\n            }\n\n            if dif<dist{\n                ans=i\n                dist = dif\n            }\n        }\n    }\n    if ans == -1{\n        fmt.Printf(\"sem ganhador\\n\")\n    }else{\n        fmt.Printf(\"%d\\n\", ans)\n    }\n}\n",
+            "lines": "31"
+        }
+    ]
+}

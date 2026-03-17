@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_18-25-18",
+            "content": "@@ -41,136 +41,28 @@\n     \n-var a,b,c%0A%0A    fmt.Scan(&a, &b, &c);%0A%0A    var p := (a%E6%BF%A7)/2;%0A    var ans := (p* (p-a) * (p-b) * (p-c))**(1/2);%0A%0A    fmt.Print(ans);\n+fmt.Println(%22qxcode%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-16_18-25-29",
+            "content": "@@ -23,22 +23,8 @@\n mt%22%0A\n-import %22math%22%0A\n func\n@@ -50,14 +50,8 @@\n ,b,c\n- float\n %0A%0A  \n@@ -114,18 +114,8 @@\n s :=\n- math.Sqrt\n  (p*\n@@ -137,16 +137,24 @@\n * (p-c))\n+**(1/2);\n %0A%0A    fm\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_18-27-34",
+            "content": "@@ -99,16 +99,20 @@\n );%0A%0A    \n+var \n p := (a%E6%BF%A7\n@@ -120,16 +120,20 @@\n /2;%0A    \n+var \n ans := m\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-16_18-28-01",
+            "content": "@@ -70,10 +70,8 @@\n loat\n-64\n %0A%0A  \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-16_18-28-11",
+            "content": "@@ -61,19 +61,23 @@\n r a,b,c \n-int\n+float64\n %0A%0A    fm\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-16_18-28-17",
+            "content": "@@ -65,15 +65,11 @@\n b,c \n-float64\n+int\n %0A%0A  \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-16_18-28-22",
+            "content": "@@ -181,15 +181,8 @@\n int(\n-%22%25.2f%22,\n ans)\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-16_18-30-05",
+            "content": "@@ -176,17 +176,16 @@\n mt.Print\n-f\n (%22%25.2f%22,\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-16_18-30-19",
+            "content": "@@ -187,10 +187,8 @@\n %25.2f\n-%5Cn\n %22,an\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-16_18-30-28",
+            "content": "package main\nimport \"fmt\"\nimport \"math\"\nfunc main() {\n    var a,b,c float64\n\n    fmt.Scan(&a, &b, &c);\n\n    p := (a\u6fe7)/2;\n    ans := math.Sqrt (p* (p-a) * (p-b) * (p-c))\n\n    fmt.Printf(\"%.2f\\n\",ans);\n}\n",
+            "lines": "13"
+        }
+    ]
+}

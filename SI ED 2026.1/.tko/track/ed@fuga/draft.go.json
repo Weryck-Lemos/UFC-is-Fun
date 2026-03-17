@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_19-24-41",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar h, p, f, d int\n\tfmt.Scan(&h, &p, &f, &d)\n\n\tposicaoAtual := f\n\n\tfor {\n\t\tposicaoAtual += d\n\n\t\tif posicaoAtual > 15 {\n\t\t\tposicaoAtual = 0\n\t\t} else if posicaoAtual<0{\n\t\t\tposicaoAtual = 15\n\t\t}\n\n\t\tif posicaoAtual == h {\n\t\t\tfmt.Println(\"S\")\n\t\t\tbreak\n\t\t}\n\t\tif posicaoAtual == p {\n\t\t\tfmt.Println(\"N\")\n\t\t\tbreak\n\t\t}\n\t}\n}",
+            "lines": "29"
+        }
+    ]
+}

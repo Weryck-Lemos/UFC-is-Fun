@@ -1,52 +1,33 @@
 version: '0.2'
 sources:
-- database: database
-  link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
-  type: remote
-  branch: master
-  cache_path: /home/ubuntu/Documentos/UFC-is-Fun/Rede POO 2025.2/poo/.tko/cache/database.md
+- name: database
+  target: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
+  type: git
+  writeable: false
   cache_timestamp: '2025-11-21 21:51:45'
-  filters: null
-- database: local
-  link: ''
+  quests: null
+  tasks: null
+- name: local
+  target: ''
   type: local
-  branch: master
-  cache_path: ''
-  cache_timestamp: ''
-  filters: null
-expanded:
-- campanha-principal
-- configuracao-e-aquecimento
-- bloco_d-crud-com-mapas-e-enumerações
-- bloco_c-listas
-tasks:
-  toalha: '{rate:100, flow:6, edge:5, alone:10}'
-  animal: '{rate:100, flow:6, edge:5, alone:10}'
-  carro: '{rate:100, flow:6, edge:5, alone:10}'
-  calculadora: '{rate:100, flow:6, edge:5, alone:10}'
-  enxugar: '{rate:100, flow:6, edge:5, alone:10}'
-  chinela: '{rate:100, flow:6, edge:5, alone:10}'
-  camisa: '{rate:100, flow:6, edge:5, alone:10}'
-  roupa: '{rate:100, flow:6, edge:5, alone:10}'
-  relogio: '{rate:100, flow:6, edge:5, alone:10}'
-  motoca: '{rate:100, alone:10}'
-  grafite: '{rate:100, alone:10}'
-  motouber: '{rate:100, alone:10}'
-  notebook: '{rate:100, alone:10}'
-  charger: '{rate:100, alone:10}'
-  tamagotchi: '{rate:100, alone:10}'
-  array: '{rate:100, alone:10}'
-  budega: '{rate:100, alone:10}'
-  lapiseira: '{rate:100, alone:10}'
-  pula-pula: '{rate:100, alone:10}'
-  cinema: '{rate:100, alone:10}'
-  contato: '{rate:100, alone:10}'
-  agenda: '{rate:100, alone:10}'
+  writeable: true
+  quests: null
+  tasks: null
+- name: sandbox
+  target: sandbox
+  type: local
+  writeable: true
+  quests: null
+  tasks: null
+expanded: []
+tasks: {}
 flags:
-  quests: 0
+  painel: 0
+  quests: 1
   tracks: 0
   tasks: 0
-  graph: 0
-  xray: 0
+  task_graph_mode: 0
+  show_time: 0
 lang: py
 selected: agiota
+next_draft_id: 0

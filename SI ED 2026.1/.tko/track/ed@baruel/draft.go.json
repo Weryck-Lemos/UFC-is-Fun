@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_19-55-27",
+            "content": "@@ -777,16 +777,34 @@\n faltando\n+%5B:len(faltando)-1%5D\n )%0A    %7D%0A\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-03-16_19-56-45",
+            "content": "@@ -783,32 +783,8 @@\n do)%0A\n-        fmt.Print(%22%5Cn%22)%0A\n     \n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-03-16_19-57-31",
+            "content": "@@ -781,26 +781,32 @@\n ando\n-%5B:len(faltando)-1%5D\n+)%0A        fmt.Print(%22%5Cn%22\n )%0A  \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-16_19-57-55",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var totalAlbum, totalPossui int\n    fmt.Scan(&totalAlbum, &totalPossui)\n\n    album := make([]int, totalAlbum+1)\n\n    repetidas := \"\"\n    ultimo := -1\n\n    for i := 0; i < totalPossui; i++ {\n        var fig int\n        fmt.Scan(&fig)\n\n        if fig == ultimo {\n            repetidas += fmt.Sprintf(\"%d \", fig)\n        }\n        \n        album[fig] = 1\n        ultimo = fig\n    }\n\n    if repetidas == \"\" {\n        fmt.Println(\"N\")\n    } else {\n        fmt.Println(repetidas[:len(repetidas)-1])\n    }\n\n    faltando := \"\"\n    for i := 1; i <= totalAlbum; i++ {\n        if album[i] == 0 {\n            faltando += fmt.Sprintf(\"%d \", i)\n        }\n    }\n\n    if faltando == \"\" {\n        fmt.Println(\"N\")\n    } else {\n        fmt.Println(faltando[:len(faltando)-1])\n    }\n}",
+            "lines": "44"
+        }
+    ]
+}

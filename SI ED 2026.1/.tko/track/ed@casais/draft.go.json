@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_19-48-55",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tdescasados := make(map[int]int)\n\tcasais := 0\n\n\tfor i := 0; i < n; i++ {\n\t\tvar animal int\n\t\tfmt.Scan(&animal)\n\n\t\tparProcurado := -animal\n\n\t\tif descasados[parProcurado] > 0 {\n\t\t\tcasais++\n\t\t\tdescasados[parProcurado]--\n\t\t} else {\n\t\t\tdescasados[animal]++\n\t\t}\n\t}\n\n\tfmt.Println(casais)\n}",
+            "lines": "29"
+        }
+    ]
+}
