@@ -10,11 +10,13 @@ sources:
   target: https://github.com/qxcodeed/arcade.git
   type: git
   writeable: false
-  cache_timestamp: '2026-03-16 19:57:37'
+  cache_timestamp: '2026-03-30 17:23:09'
   quests: null
   tasks: null
 expanded:
-- ed@main-quest
+- ed@analise-map_set-map_set-basic
+- '@ed@analise-map_set-map_set-basic_sem_quest'
+- '@ed@recursao-recursion-rec-basic_sem_quest'
 tasks:
   ed@pintando: '{rate:100}'
   ed@mumia: '{rate:100}'
@@ -23,6 +25,9 @@ tasks:
   ed@casais: '{rate:100}'
   ed@baruel: '{rate:100}'
   ed@gomos: '{rate:100}'
+  ed@princesa: '{rate:100}'
+  ed@apagando: '{rate:100}'
+  ed@manipulacao: '{rate:100}'
 flags:
   painel: 0
   quests: 0
@@ -31,5 +36,5 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: ed@revisão
+selected: ed@buscas
 next_draft_id: 0

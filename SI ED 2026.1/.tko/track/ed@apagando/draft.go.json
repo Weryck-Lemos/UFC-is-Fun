@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_18-08-20",
+            "content": "@@ -495,21 +495,6 @@\n %0A%09%7D%0A\n-%09fmt.Println()%0A\n %7D%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-03-30_18-08-28",
+            "content": "@@ -501,16 +501,15 @@\n mt.Print\n-(%22 %22\n+ln(\n )%0A%7D%0A\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-03-30_18-08-40",
+            "content": "@@ -488,20 +488,29 @@\n int(\n-%22 %25d%22, id)%0A%09%7D\n+id)%0A%09%7D%0A%09fmt.Print(%22 %22)\n %0A%7D%0A\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-03-30_18-09-28",
+            "content": "@@ -441,25 +441,59 @@\n l %7B%0A\n-%0A%09%09fmt.Print(%22\n+%09%09if i %3E 0 %7B%0A%09%09%09fmt.Print(%22 %22)%0A%09%09%7D%0A%09%09fmt.Print(%22 \n %25d\n- \n %22, i\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-03-30_18-09-43",
+            "content": "@@ -458,15 +458,16 @@\n %22%25d %22, i\n+d\n )%0A%09%7D%0A%7D%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-30_18-09-48",
+            "content": "@@ -449,17 +449,16 @@\n mt.Print\n-f\n (%22%25d %22, \n@@ -458,16 +458,15 @@\n %22%25d %22, i\n-d\n )%0A%09%7D%0A%7D%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-30_18-11-02",
+            "content": "@@ -406,25 +406,25 @@\n %09%7D%0A%09%7D%0A%0A%09for \n-_\n+i\n , id := rang\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-30_18-12-15",
+            "content": "@@ -468,23 +468,7 @@\n )%0A%09%7D\n-%0A%0A%09fmt.Println()\n %0A%7D%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-30_18-12-26",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tfilaInicial := make([]int, n)\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&filaInicial[i])\n\t}\n\n\tvar m int\n\tfmt.Scan(&m)\n\n\tsairam := make(map[int]bool)\n\tfor i := 0; i < m; i++ {\n\t\tvar id int\n\t\tfmt.Scan(&id)\n\t\tsairam[id] = true\n\t}\n\n\tvar filaFinal []int\n\tfor _, id := range filaInicial {\n\n\t\tif !sairam[id] {\n\t\t\tfilaFinal = append(filaFinal, id)\n\t\t}\n\t}\n\n\tfor _, id := range filaFinal {\n\n\t\tfmt.Printf(\"%d \", id)\n\t}\n\n\tfmt.Println()\n}\n",
+            "lines": "38"
+        }
+    ]
+}
