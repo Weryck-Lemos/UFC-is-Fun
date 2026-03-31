@@ -10,13 +10,13 @@ sources:
   target: https://github.com/qxcodeed/arcade.git
   type: git
   writeable: false
-  cache_timestamp: '2026-03-30 17:23:09'
+  cache_timestamp: '2026-03-31 09:49:32'
   quests: null
   tasks: null
 expanded:
-- ed@analise-map_set-map_set-basic
-- '@ed@analise-map_set-map_set-basic_sem_quest'
 - '@ed@recursao-recursion-rec-basic_sem_quest'
+- '@ed@analise-map_set-map_set-basic_sem_quest'
+- ed@analise-map_set-map_set-basic
 tasks:
   ed@pintando: '{rate:100}'
   ed@mumia: '{rate:100}'
@@ -36,5 +36,5 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: ed@especiais
+selected: ed@manipulacao
 next_draft_id: 0
