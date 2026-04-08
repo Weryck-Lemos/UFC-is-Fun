@@ -4,11 +4,19 @@ Bem-vindo ao meu repositório de monitoria! Aqui organizo todos os materiais, c�
 
 O objetivo deste espaço é centralizar o conhecimento e facilitar o acesso dos alunos aos conteúdos das disciplinas que acompanho.
 
+---
 
+## 🏆 Preparatório OBI (POBI)
+
+Além das disciplinas da graduação, atuei como instrutor para turmas do **POBI (Preparatório para a Olimpíada Brasileira de Informática)** durante os anos de **2025 e 2026**. 
+
+O foco dessas aulas foi o desenvolvimento de lógica avançada, técnicas de programação competitiva e resolução de problemas de alto nível utilizando C++.
+
+---
 
 ## 📚 Histórico de Monitoria
 
-Abaixo, as disciplinas que já acompanhei e os respectivos cursos:
+Abaixo, as disciplinas que já acompanhei na graduação:
 
 | Disciplina | Sigla | Curso | Conteúdo Principal |
 | :--- | :--- | :--- | :--- |
@@ -21,9 +29,9 @@ Abaixo, as disciplinas que já acompanhei e os respectivos cursos:
 
 ## 🛠️ O que você encontra por aqui?
 
-* 📂 **Exercícios Resolvidos:** Respostas detalhadas das listas de exercícios oficiais.
+* 📂 **Exercícios Resolvidos:** Respostas detalhadas das listas de exercícios oficiais e desafios de maratona.
 * 💻 **Exemplos de Aula:** Códigos implementados durante os horários de monitoria para sanar dúvidas.
-* 📝 **Dicas Teóricas:** Pequenos resumos sobre conceitos que costumam "dar nó" na cabeça dos alunos.
+* 📝 **Dicas Teóricas:** Pequenos resumos sobre conceitos complexos (ponteiros, recursão, EOF, etc).
 * 🎯 **Preparação para Provas:** Materiais focados nos tópicos mais recorrentes nas avaliações.
 
 ---
