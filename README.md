@@ -31,7 +31,14 @@ Abaixo, as disciplinas que já acompanhei na graduação:
 
 * 📂 **Exercícios Resolvidos:** Respostas detalhadas das listas de exercícios oficiais e desafios de maratona.
 * 💻 **Exemplos de Aula:** Códigos implementados durante os horários de monitoria para sanar dúvidas.
-* 📝 **Dicas Teóricas:** Pequenos resumos sobre conceitos complexos (ponteiros, recursão, EOF, etc).
+* 📝 **Dicas Teóricas:** Pequenos resumos sobre conceitos de programação.
 * 🎯 **Preparação para Provas:** Materiais focados nos tópicos mais recorrentes nas avaliações.
 
 ---
+
+## 💬 Contato e Dúvidas
+
+Se você travou em alguma lógica ou encontrou um bug em algum código aqui do repositório, pode me procurar:
+
+* **Discord:** `veriq_`
+* **E-mail:** `weryck.lemos@alu.ufc.br`
