@@ -36,6 +36,15 @@ Abaixo, as disciplinas que já acompanhei na graduação:
 
 ---
 
+### 📍 Plataformas Utilizadas
+As questões presentes neste repositório foram retiradas e resolvidas das seguintes plataformas:
+* **TKO**
+* **Moodle**
+* **Beecrowd**
+* **Neps Academy**
+
+---
+
 ## 💬 Contato e Dúvidas
 
 Se você travou em alguma lógica ou encontrou um bug em algum código aqui do repositório, pode me procurar:
