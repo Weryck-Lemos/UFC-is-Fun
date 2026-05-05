@@ -1,18 +1,20 @@
-#include <iostream>
-#include <string>
-#include <cctype>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main() {
+int main(){
+   string s;
+   cin>>s;
 
+   for(char c : s){
 
-    string s = "Exemplo De Texto";
-
-    for (int i=0; i<s.size(); i++) s[i] = tolower(s[i]);
-    cout << "minusculo: " << s << endl;
-
-    for (int i=0; i<s.size(); i++) s[i] = toupper(s[i]);
-    cout << "maiusculo: " << s << endl;
-
-  
+    if(c>='A' && c<='C')cout<<2;
+    else if(c>='D' && c<='F')cout<<3;
+    else if(c>='G' && c<='I')cout<<4;
+    else if(c>='J' && c<='L')cout<<5;
+    else if(c>='M' && c<='O')cout<<6;
+    else if(c>='P' && c<='S')cout<<7;
+    else if(c>='T' && c<='V')cout<<8;
+    else if(c>='W' && c<='Z')cout<<9;
+    else cout<<'-';
+   }
 }

@@ -21,7 +21,8 @@ sources:
   writeable: false
   quests: null
   tasks: null
-expanded: []
+expanded:
+- ed@list
 flags:
   inbox: all
   panel: help
@@ -29,5 +30,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@backtrack
-selected_index: 3
+selected: ed@lista_d4
+selected_index: 8
