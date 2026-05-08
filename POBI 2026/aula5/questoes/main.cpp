@@ -1,17 +1,21 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <stack>
 using namespace std;
 
-int main(){
-    //vector<vector<int>> mat(3, vector<int> 3);
-    int mat[3][3];
+int main() {
 
-    for(int i=0; i<3; i++){
-        int suml = 0
-        for(int j=0; j<3; j++){
-            cin>>mat[i][j];
-            suml+=mat[i][j];
-        }
-        cout<<"Linha "<<i<<": "<<suml<<"\n";
+
+    stack<int> s;
+
+    s.push(10);
+    s.push(20);
+    s.push(30);
+
+    while(!s.empty()) {
+        cout << s.top() << " ";
+        s.pop();
     }
 
+
+    
 }
