@@ -1,42 +1,36 @@
-#include <iostream>
-#include <stack>
-#include <string>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int N, count = 0;
-    cin >> N;
-    cin.ignore(); 
+    int n; 
+    cin>>n;
 
-    while (count < N) {
+    while(n--){
         string line;
-        getline(cin, line);
+        cin>>line;
 
         stack<char> caracteres;
         bool ok = true;
 
-        for (char c : line) {
-            if (c == '{' || c == '[' || c == '(') {
-                caracteres.push(c);
-            } else {
-                if (caracteres.empty() || (caracteres.top() != '{' && c == '}') || (caracteres.top() != '[' && c == ']') || (caracteres.top() != '(' && c == ')')) {
+        for(char c : line){
+            if(c == '{' || c == '[' || c== '(') caracteres.push(c);
+
+            else{
+                if (caracteres.empty() || 
+                (caracteres.top() != '{' && c == '}') || 
+                (caracteres.top() != '[' && c == ']') || 
+                (caracteres.top() != '(' && c == ')')) {
                     ok = false;
                     break;
                 }
-                caracteres.pop(); // Remove o caractere de abertura correspondente da pilha
-            }
+                caracteres.pop();
+            } 
         }
 
-        if (!caracteres.empty()) ok = false;
+        if(!caracteres.empty()) ok = false;
 
-        if (ok == true) {
-            cout << "S" << endl;
-        } else {
-            cout << "N" << endl;
-        }
+        if(ok)cout<<"S\n";
+        else cout<<"N\n";
 
-        count++;
     }
-
 }
