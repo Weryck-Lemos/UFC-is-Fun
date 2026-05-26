@@ -2,19 +2,18 @@
 using namespace std;
 
 int main(){
+    int n;
+    cin>>n;
+    map<string, string> mp;
+    string i, p;
+    for(int j=0; j<n; j++){
+        cin>>i>>p;
+        mp[i] = p;
+    }
 
-    map<string, float> altura;
-
-    altura["Carla"] = 1.68;
-    altura["Kamila"] = 1.55;
-    altura["Denilson"] = 1.72;
-
-
-    cout<<"Idade de Denilson "<<altura["Denilson"]<<"\n";
-
-
-    altura.erase("Denilson");
-    cout<<altura.count("Denilson");
-
+    string word;
+    while(cin>>word){
+        cout<<mp[word]<<" ";
+    }
     
 }

@@ -1,18 +1,18 @@
-#include <iostream>
-#include <set>
+#include <bits/stdc++.h>
+
 using namespace std;
 
 int main(){
     int n;
     cin>>n;
-    set<int> presenca;
-
+    
+    set<int> st;
     for(int i=0; i<n; i++){
         int x;
         cin>>x;
-        presenca.insert(x);
+        st.insert(x);
     }
 
-    cout<<presenca.size()<<endl;
+    cout<<st.size()<<"\n";
 }
 
