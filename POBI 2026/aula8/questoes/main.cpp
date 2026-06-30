@@ -1,23 +1,29 @@
 #include <bits/stdc++.h>
-using namespace std
+using namespace std;
+#define ll long long
 
 int main() {
-    
-    int n;
+    ll n;
     cin>>n;
 
-    if(n<2){
-        cout<<"Nao e primo\n";
+    if(n>=2){
+        cout<<2<<" ";
     }
 
-    for(int i=2; i*i<=n; i++){
-        if(n%i==0){
-            cout<<"Nao e primo\n";
-            return 0;
+    for(ll i=3; i<=n; i+=2){
+        bool isprime = true;
+        for(ll j=3; j*j<=i; j+=2){
+            if(i%j==0){
+                isprime = false;
+                break;
+            }
+        }
+        if(isprime){
+            cout<<i<<" ";
         }
     }
 
-    cout<<"E primo\n";
+    
 }
 
 

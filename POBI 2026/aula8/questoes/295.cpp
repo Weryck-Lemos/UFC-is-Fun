@@ -5,7 +5,7 @@ int main(){
     int n;
     cin>>n;
 
-    bool isprime[n +1];
+    bool isprime[n+1];
 
     for(int i=2; i<=n; i++) isprime[i] = true;
 
